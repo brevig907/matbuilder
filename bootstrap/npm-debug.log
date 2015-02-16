@@ -1,0 +1,1313 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'bootstrap' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'bootstrap', null ]
+5 verbose cache add name=undefined spec="bootstrap" args=["bootstrap",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bootstrap',
+6 verbose parsed url   path: 'bootstrap',
+6 verbose parsed url   href: 'bootstrap' }
+7 silly lockFile 3c71cc99-bootstrap bootstrap
+8 verbose lock bootstrap /home/vagrant/.npm/3c71cc99-bootstrap.lock
+9 silly lockFile 3c71cc99-bootstrap bootstrap
+10 silly lockFile 3c71cc99-bootstrap bootstrap
+11 verbose addNamed [ 'bootstrap', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 2571d98f-bootstrap bootstrap@
+14 verbose lock bootstrap@ /home/vagrant/.npm/2571d98f-bootstrap.lock
+15 silly addNameRange { name: 'bootstrap', range: '*', hasData: false }
+16 verbose url raw bootstrap
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap' ]
+18 verbose url resolved https://registry.npmjs.org/bootstrap
+19 info trying registry request attempt 1 at 21:05:25
+20 verbose etag "5AK36EXZ8QABGQ7N5HSTG4YAR"
+21 http GET https://registry.npmjs.org/bootstrap
+22 http 304 https://registry.npmjs.org/bootstrap
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Fri, 06 Feb 2015 21:05:25 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Fri, 06 Feb 2015 21:05:25 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"5AK36EXZ8QABGQ7N5HSTG4YAR"',
+23 silly registry.get     age: '12',
+23 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1423256725.927434,VS0,VE0',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag bootstrap from cache
+25 silly addNameRange number 2 { name: 'bootstrap', range: '*', hasData: true }
+26 silly addNameRange versions [ 'bootstrap',
+26 silly addNameRange   [ '0.0.1', '0.0.2', '3.1.1', '3.2.0', '3.3.0', '3.3.1', '3.3.2' ] ]
+27 verbose addNamed [ 'bootstrap', '3.3.2' ]
+28 verbose addNamed [ '3.3.2', '3.3.2' ]
+29 silly lockFile f16b9f02-bootstrap-3-3-2 bootstrap@3.3.2
+30 verbose lock bootstrap@3.3.2 /home/vagrant/.npm/f16b9f02-bootstrap-3-3-2.lock
+31 silly lockFile a81129cf-rg-bootstrap-bootstrap-3-3-2-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz
+32 verbose lock https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz /home/vagrant/.npm/a81129cf-rg-bootstrap-bootstrap-3-3-2-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz',
+33 verbose addRemoteTarball   '43b0283dfb2ac83b12cd3dc1f4238f5042ed02cc' ]
+34 info retry fetch attempt 1 at 21:05:26
+35 verbose fetch to= /home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz
+36 http GET https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz
+37 http 200 https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz
+38 verbose tar unpack /home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz
+39 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+40 verbose lock tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package /home/vagrant/.npm/00e5483a-26022-0-9225942685734481-package.lock
+41 silly lockFile 018c563f-26022-0-9225942685734481-tmp-tgz tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz
+42 verbose lock tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz /home/vagrant/.npm/018c563f-26022-0-9225942685734481-tmp-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+50 silly gunzTarPerm extractEntry LICENSE
+51 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+52 silly gunzTarPerm extractEntry Gruntfile.js
+53 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+54 silly gunzTarPerm extractEntry bower.json
+55 silly gunzTarPerm modified mode [ 'bower.json', 438, 420 ]
+56 silly gunzTarPerm extractEntry .editorconfig
+57 silly gunzTarPerm modified mode [ '.editorconfig', 438, 420 ]
+58 silly gunzTarPerm extractEntry .travis.yml
+59 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+60 silly gunzTarPerm extractEntry CNAME
+61 silly gunzTarPerm modified mode [ 'CNAME', 438, 420 ]
+62 silly gunzTarPerm extractEntry _config.yml
+63 silly gunzTarPerm modified mode [ '_config.yml', 438, 420 ]
+64 silly gunzTarPerm extractEntry .gitattributes
+65 silly gunzTarPerm modified mode [ '.gitattributes', 438, 420 ]
+66 silly gunzTarPerm extractEntry composer.json
+67 silly gunzTarPerm modified mode [ 'composer.json', 438, 420 ]
+68 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css
+69 silly gunzTarPerm modified mode [ 'dist/css/bootstrap-theme.css', 438, 420 ]
+70 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css.map
+71 silly gunzTarPerm modified mode [ 'dist/css/bootstrap-theme.css.map', 438, 420 ]
+72 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css
+73 silly gunzTarPerm modified mode [ 'dist/css/bootstrap-theme.min.css', 438, 420 ]
+74 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+75 silly gunzTarPerm modified mode [ 'dist/css/bootstrap.css', 438, 420 ]
+76 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+77 silly gunzTarPerm modified mode [ 'dist/css/bootstrap.css.map', 438, 420 ]
+78 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+79 silly gunzTarPerm modified mode [ 'dist/css/bootstrap.min.css', 438, 420 ]
+80 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.eot
+81 silly gunzTarPerm modified mode [ 'dist/fonts/glyphicons-halflings-regular.eot', 438, 420 ]
+82 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.svg
+83 silly gunzTarPerm modified mode [ 'dist/fonts/glyphicons-halflings-regular.svg', 438, 420 ]
+84 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.ttf
+85 silly gunzTarPerm modified mode [ 'dist/fonts/glyphicons-halflings-regular.ttf', 438, 420 ]
+86 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff
+87 silly gunzTarPerm modified mode [ 'dist/fonts/glyphicons-halflings-regular.woff', 438, 420 ]
+88 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff2
+89 silly gunzTarPerm modified mode [ 'dist/fonts/glyphicons-halflings-regular.woff2', 438, 420 ]
+90 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+91 silly gunzTarPerm modified mode [ 'dist/js/bootstrap.js', 438, 420 ]
+92 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+93 silly gunzTarPerm modified mode [ 'dist/js/bootstrap.min.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry dist/js/npm.js
+95 silly gunzTarPerm modified mode [ 'dist/js/npm.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry docs/LICENSE
+97 silly gunzTarPerm modified mode [ 'docs/LICENSE', 438, 420 ]
+98 silly gunzTarPerm extractEntry docs/sitemap.xml
+99 silly gunzTarPerm modified mode [ 'docs/sitemap.xml', 438, 420 ]
+100 silly gunzTarPerm extractEntry docs/_includes/ads.html
+101 silly gunzTarPerm modified mode [ 'docs/_includes/ads.html', 438, 420 ]
+102 silly gunzTarPerm extractEntry docs/_includes/components/list-group.html
+103 silly gunzTarPerm modified mode [ 'docs/_includes/components/list-group.html', 438, 420 ]
+104 silly gunzTarPerm extractEntry docs/_includes/components/alerts.html
+105 silly gunzTarPerm modified mode [ 'docs/_includes/components/alerts.html', 438, 420 ]
+106 silly gunzTarPerm extractEntry docs/_includes/components/breadcrumbs.html
+107 silly gunzTarPerm modified mode [ 'docs/_includes/components/breadcrumbs.html', 438, 420 ]
+108 silly gunzTarPerm extractEntry docs/_includes/components/button-dropdowns.html
+109 silly gunzTarPerm modified mode [ 'docs/_includes/components/button-dropdowns.html', 438, 420 ]
+110 silly gunzTarPerm extractEntry docs/_includes/components/button-groups.html
+111 silly gunzTarPerm modified mode [ 'docs/_includes/components/button-groups.html', 438, 420 ]
+112 silly gunzTarPerm extractEntry docs/_includes/components/dropdowns.html
+113 silly gunzTarPerm modified mode [ 'docs/_includes/components/dropdowns.html', 438, 420 ]
+114 silly gunzTarPerm extractEntry docs/_includes/components/glyphicons.html
+115 silly gunzTarPerm modified mode [ 'docs/_includes/components/glyphicons.html', 438, 420 ]
+116 silly gunzTarPerm extractEntry docs/_includes/components/input-groups.html
+117 silly gunzTarPerm modified mode [ 'docs/_includes/components/input-groups.html', 438, 420 ]
+118 silly gunzTarPerm extractEntry docs/_includes/components/jumbotron.html
+119 silly gunzTarPerm modified mode [ 'docs/_includes/components/jumbotron.html', 438, 420 ]
+120 silly gunzTarPerm extractEntry docs/_includes/components/labels.html
+121 silly gunzTarPerm modified mode [ 'docs/_includes/components/labels.html', 438, 420 ]
+122 silly gunzTarPerm extractEntry docs/_includes/components/badges.html
+123 silly gunzTarPerm modified mode [ 'docs/_includes/components/badges.html', 438, 420 ]
+124 silly gunzTarPerm extractEntry docs/_includes/components/media.html
+125 silly gunzTarPerm modified mode [ 'docs/_includes/components/media.html', 438, 420 ]
+126 silly gunzTarPerm extractEntry docs/_includes/components/navbar.html
+127 silly gunzTarPerm modified mode [ 'docs/_includes/components/navbar.html', 438, 420 ]
+128 silly gunzTarPerm extractEntry docs/_includes/components/navs.html
+129 silly gunzTarPerm modified mode [ 'docs/_includes/components/navs.html', 438, 420 ]
+130 silly gunzTarPerm extractEntry docs/_includes/components/page-header.html
+131 silly gunzTarPerm modified mode [ 'docs/_includes/components/page-header.html', 438, 420 ]
+132 silly gunzTarPerm extractEntry docs/_includes/components/pagination.html
+133 silly gunzTarPerm modified mode [ 'docs/_includes/components/pagination.html', 438, 420 ]
+134 silly gunzTarPerm extractEntry docs/_includes/components/panels.html
+135 silly gunzTarPerm modified mode [ 'docs/_includes/components/panels.html', 438, 420 ]
+136 silly gunzTarPerm extractEntry docs/_includes/components/progress-bars.html
+137 silly gunzTarPerm modified mode [ 'docs/_includes/components/progress-bars.html', 438, 420 ]
+138 silly gunzTarPerm extractEntry docs/_includes/components/responsive-embed.html
+139 silly gunzTarPerm modified mode [ 'docs/_includes/components/responsive-embed.html', 438, 420 ]
+140 silly gunzTarPerm extractEntry docs/_includes/components/thumbnails.html
+141 silly gunzTarPerm modified mode [ 'docs/_includes/components/thumbnails.html', 438, 420 ]
+142 silly gunzTarPerm extractEntry docs/_includes/components/wells.html
+143 silly gunzTarPerm modified mode [ 'docs/_includes/components/wells.html', 438, 420 ]
+144 silly gunzTarPerm extractEntry docs/_includes/css/less.html
+145 silly gunzTarPerm modified mode [ 'docs/_includes/css/less.html', 438, 420 ]
+146 silly gunzTarPerm extractEntry docs/_includes/css/buttons.html
+147 silly gunzTarPerm modified mode [ 'docs/_includes/css/buttons.html', 438, 420 ]
+148 silly gunzTarPerm extractEntry docs/_includes/css/forms.html
+149 silly gunzTarPerm modified mode [ 'docs/_includes/css/forms.html', 438, 420 ]
+150 silly gunzTarPerm extractEntry docs/_includes/css/grid.html
+151 silly gunzTarPerm modified mode [ 'docs/_includes/css/grid.html', 438, 420 ]
+152 silly gunzTarPerm extractEntry docs/_includes/css/helpers.html
+153 silly gunzTarPerm modified mode [ 'docs/_includes/css/helpers.html', 438, 420 ]
+154 silly gunzTarPerm extractEntry docs/_includes/css/images.html
+155 silly gunzTarPerm modified mode [ 'docs/_includes/css/images.html', 438, 420 ]
+156 silly gunzTarPerm extractEntry docs/_includes/css/code.html
+157 silly gunzTarPerm modified mode [ 'docs/_includes/css/code.html', 438, 420 ]
+158 silly gunzTarPerm extractEntry docs/_includes/css/overview.html
+159 silly gunzTarPerm modified mode [ 'docs/_includes/css/overview.html', 438, 420 ]
+160 silly gunzTarPerm extractEntry docs/_includes/css/responsive-utilities.html
+161 silly gunzTarPerm modified mode [ 'docs/_includes/css/responsive-utilities.html', 438, 420 ]
+162 silly gunzTarPerm extractEntry docs/_includes/css/sass.html
+163 silly gunzTarPerm modified mode [ 'docs/_includes/css/sass.html', 438, 420 ]
+164 silly gunzTarPerm extractEntry docs/_includes/css/tables.html
+165 silly gunzTarPerm modified mode [ 'docs/_includes/css/tables.html', 438, 420 ]
+166 silly gunzTarPerm extractEntry docs/_includes/css/type.html
+167 silly gunzTarPerm modified mode [ 'docs/_includes/css/type.html', 438, 420 ]
+168 silly gunzTarPerm extractEntry docs/_includes/customizer-variables.html
+169 silly gunzTarPerm modified mode [ 'docs/_includes/customizer-variables.html', 438, 420 ]
+170 silly gunzTarPerm extractEntry docs/_includes/footer.html
+171 silly gunzTarPerm modified mode [ 'docs/_includes/footer.html', 438, 420 ]
+172 silly gunzTarPerm extractEntry docs/_includes/getting-started/grunt.html
+173 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/grunt.html', 438, 420 ]
+174 silly gunzTarPerm extractEntry docs/_includes/getting-started/accessibility.html
+175 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/accessibility.html', 438, 420 ]
+176 silly gunzTarPerm extractEntry docs/_includes/getting-started/community.html
+177 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/community.html', 438, 420 ]
+178 silly gunzTarPerm extractEntry docs/_includes/getting-started/disabling-responsiveness.html
+179 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/disabling-responsiveness.html',
+179 silly gunzTarPerm   438,
+179 silly gunzTarPerm   420 ]
+180 silly gunzTarPerm extractEntry docs/_includes/getting-started/download.html
+181 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/download.html', 438, 420 ]
+182 silly gunzTarPerm extractEntry docs/_includes/getting-started/examples.html
+183 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/examples.html', 438, 420 ]
+184 silly gunzTarPerm extractEntry docs/_includes/getting-started/browser-device-support.html
+185 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/browser-device-support.html',
+185 silly gunzTarPerm   438,
+185 silly gunzTarPerm   420 ]
+186 silly gunzTarPerm extractEntry docs/_includes/getting-started/license.html
+187 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/license.html', 438, 420 ]
+188 silly gunzTarPerm extractEntry docs/_includes/getting-started/template.html
+189 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/template.html', 438, 420 ]
+190 silly gunzTarPerm extractEntry docs/_includes/getting-started/third-party-support.html
+191 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/third-party-support.html',
+191 silly gunzTarPerm   438,
+191 silly gunzTarPerm   420 ]
+192 silly gunzTarPerm extractEntry docs/_includes/getting-started/tools.html
+193 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/tools.html', 438, 420 ]
+194 silly gunzTarPerm extractEntry docs/_includes/getting-started/translations.html
+195 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/translations.html', 438, 420 ]
+196 silly gunzTarPerm extractEntry docs/_includes/getting-started/whats-included.html
+197 silly gunzTarPerm modified mode [ 'docs/_includes/getting-started/whats-included.html',
+197 silly gunzTarPerm   438,
+197 silly gunzTarPerm   420 ]
+198 silly gunzTarPerm extractEntry docs/_includes/header.html
+199 silly gunzTarPerm modified mode [ 'docs/_includes/header.html', 438, 420 ]
+200 silly gunzTarPerm extractEntry docs/_includes/js/modal.html
+201 silly gunzTarPerm modified mode [ 'docs/_includes/js/modal.html', 438, 420 ]
+202 silly gunzTarPerm extractEntry docs/_includes/js/affix.html
+203 silly gunzTarPerm modified mode [ 'docs/_includes/js/affix.html', 438, 420 ]
+204 silly gunzTarPerm extractEntry docs/_includes/js/buttons.html
+205 silly gunzTarPerm modified mode [ 'docs/_includes/js/buttons.html', 438, 420 ]
+206 silly gunzTarPerm extractEntry docs/_includes/js/carousel.html
+207 silly gunzTarPerm modified mode [ 'docs/_includes/js/carousel.html', 438, 420 ]
+208 silly gunzTarPerm extractEntry docs/_includes/js/collapse.html
+209 silly gunzTarPerm modified mode [ 'docs/_includes/js/collapse.html', 438, 420 ]
+210 silly gunzTarPerm extractEntry docs/_includes/js/dropdowns.html
+211 silly gunzTarPerm modified mode [ 'docs/_includes/js/dropdowns.html', 438, 420 ]
+212 silly gunzTarPerm extractEntry docs/_includes/js/alerts.html
+213 silly gunzTarPerm modified mode [ 'docs/_includes/js/alerts.html', 438, 420 ]
+214 silly gunzTarPerm extractEntry docs/_includes/js/overview.html
+215 silly gunzTarPerm modified mode [ 'docs/_includes/js/overview.html', 438, 420 ]
+216 silly gunzTarPerm extractEntry docs/_includes/js/popovers.html
+217 silly gunzTarPerm modified mode [ 'docs/_includes/js/popovers.html', 438, 420 ]
+218 silly gunzTarPerm extractEntry docs/_includes/js/scrollspy.html
+219 silly gunzTarPerm modified mode [ 'docs/_includes/js/scrollspy.html', 438, 420 ]
+220 silly gunzTarPerm extractEntry docs/_includes/js/tabs.html
+221 silly gunzTarPerm modified mode [ 'docs/_includes/js/tabs.html', 438, 420 ]
+222 silly gunzTarPerm extractEntry docs/_includes/js/tooltips.html
+223 silly gunzTarPerm modified mode [ 'docs/_includes/js/tooltips.html', 438, 420 ]
+224 silly gunzTarPerm extractEntry docs/_includes/js/transitions.html
+225 silly gunzTarPerm modified mode [ 'docs/_includes/js/transitions.html', 438, 420 ]
+226 silly gunzTarPerm extractEntry docs/_includes/nav/about.html
+227 silly gunzTarPerm modified mode [ 'docs/_includes/nav/about.html', 438, 420 ]
+228 silly gunzTarPerm extractEntry docs/_includes/nav/components.html
+229 silly gunzTarPerm modified mode [ 'docs/_includes/nav/components.html', 438, 420 ]
+230 silly gunzTarPerm extractEntry docs/_includes/nav/css.html
+231 silly gunzTarPerm modified mode [ 'docs/_includes/nav/css.html', 438, 420 ]
+232 silly gunzTarPerm extractEntry docs/_includes/nav/customize.html
+233 silly gunzTarPerm modified mode [ 'docs/_includes/nav/customize.html', 438, 420 ]
+234 silly gunzTarPerm extractEntry docs/_includes/nav/getting-started.html
+235 silly gunzTarPerm modified mode [ 'docs/_includes/nav/getting-started.html', 438, 420 ]
+236 silly gunzTarPerm extractEntry docs/_includes/nav/javascript.html
+237 silly gunzTarPerm modified mode [ 'docs/_includes/nav/javascript.html', 438, 420 ]
+238 silly gunzTarPerm extractEntry docs/_includes/nav/main.html
+239 silly gunzTarPerm modified mode [ 'docs/_includes/nav/main.html', 438, 420 ]
+240 silly gunzTarPerm extractEntry docs/_includes/nav/migration.html
+241 silly gunzTarPerm modified mode [ 'docs/_includes/nav/migration.html', 438, 420 ]
+242 silly gunzTarPerm extractEntry docs/_includes/social-buttons.html
+243 silly gunzTarPerm modified mode [ 'docs/_includes/social-buttons.html', 438, 420 ]
+244 silly gunzTarPerm extractEntry docs/_jade/customizer-nav.jade
+245 silly gunzTarPerm modified mode [ 'docs/_jade/customizer-nav.jade', 438, 420 ]
+246 silly gunzTarPerm extractEntry docs/_jade/customizer-variables.jade
+247 silly gunzTarPerm modified mode [ 'docs/_jade/customizer-variables.jade', 438, 420 ]
+248 silly gunzTarPerm extractEntry docs/_layouts/default.html
+249 silly gunzTarPerm modified mode [ 'docs/_layouts/default.html', 438, 420 ]
+250 silly gunzTarPerm extractEntry docs/_layouts/home.html
+251 silly gunzTarPerm modified mode [ 'docs/_layouts/home.html', 438, 420 ]
+252 silly gunzTarPerm extractEntry docs/_plugins/bridge.rb
+253 silly gunzTarPerm modified mode [ 'docs/_plugins/bridge.rb', 438, 420 ]
+254 silly gunzTarPerm extractEntry docs/_plugins/bugify.rb
+255 silly gunzTarPerm modified mode [ 'docs/_plugins/bugify.rb', 438, 420 ]
+256 silly gunzTarPerm extractEntry docs/about.html
+257 silly gunzTarPerm modified mode [ 'docs/about.html', 438, 420 ]
+258 silly gunzTarPerm extractEntry docs/apple-touch-icon.png
+259 silly gunzTarPerm modified mode [ 'docs/apple-touch-icon.png', 438, 420 ]
+260 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-outline.svg
+261 silly gunzTarPerm modified mode [ 'docs/assets/brand/bootstrap-outline.svg', 438, 420 ]
+262 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-punchout.svg
+263 silly gunzTarPerm modified mode [ 'docs/assets/brand/bootstrap-punchout.svg', 438, 420 ]
+264 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-solid.svg
+265 silly gunzTarPerm modified mode [ 'docs/assets/brand/bootstrap-solid.svg', 438, 420 ]
+266 silly gunzTarPerm extractEntry docs/assets/css/docs.min.css
+267 silly gunzTarPerm modified mode [ 'docs/assets/css/docs.min.css', 438, 420 ]
+268 silly gunzTarPerm extractEntry docs/assets/css/src/docs.css
+269 silly gunzTarPerm modified mode [ 'docs/assets/css/src/docs.css', 438, 420 ]
+270 silly gunzTarPerm extractEntry docs/assets/css/src/pygments-manni.css
+271 silly gunzTarPerm modified mode [ 'docs/assets/css/src/pygments-manni.css', 438, 420 ]
+272 silly gunzTarPerm extractEntry docs/assets/flash/ZeroClipboard.swf
+273 silly gunzTarPerm modified mode [ 'docs/assets/flash/ZeroClipboard.swf', 438, 420 ]
+274 silly gunzTarPerm extractEntry docs/assets/img/components.png
+275 silly gunzTarPerm modified mode [ 'docs/assets/img/components.png', 438, 420 ]
+276 silly gunzTarPerm extractEntry docs/assets/img/devices.png
+277 silly gunzTarPerm modified mode [ 'docs/assets/img/devices.png', 438, 420 ]
+278 silly gunzTarPerm extractEntry docs/assets/img/sass-less.png
+279 silly gunzTarPerm modified mode [ 'docs/assets/img/sass-less.png', 438, 420 ]
+280 silly gunzTarPerm extractEntry docs/assets/js/customize.min.js
+281 silly gunzTarPerm modified mode [ 'docs/assets/js/customize.min.js', 438, 420 ]
+282 silly gunzTarPerm extractEntry docs/assets/js/docs.min.js
+283 silly gunzTarPerm modified mode [ 'docs/assets/js/docs.min.js', 438, 420 ]
+284 silly gunzTarPerm extractEntry docs/assets/js/ie-emulation-modes-warning.js
+285 silly gunzTarPerm modified mode [ 'docs/assets/js/ie-emulation-modes-warning.js', 438, 420 ]
+286 silly gunzTarPerm extractEntry docs/assets/js/ie10-viewport-bug-workaround.js
+287 silly gunzTarPerm modified mode [ 'docs/assets/js/ie10-viewport-bug-workaround.js', 438, 420 ]
+288 silly gunzTarPerm extractEntry docs/assets/js/ie8-responsive-file-warning.js
+289 silly gunzTarPerm modified mode [ 'docs/assets/js/ie8-responsive-file-warning.js', 438, 420 ]
+290 silly gunzTarPerm extractEntry docs/assets/js/raw-files.min.js
+291 silly gunzTarPerm modified mode [ 'docs/assets/js/raw-files.min.js', 438, 420 ]
+292 silly gunzTarPerm extractEntry docs/assets/js/src/application.js
+293 silly gunzTarPerm modified mode [ 'docs/assets/js/src/application.js', 438, 420 ]
+294 silly gunzTarPerm extractEntry docs/assets/js/src/customizer.js
+295 silly gunzTarPerm modified mode [ 'docs/assets/js/src/customizer.js', 438, 420 ]
+296 silly gunzTarPerm extractEntry docs/assets/js/vendor/Blob.js
+297 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/Blob.js', 438, 420 ]
+298 silly gunzTarPerm extractEntry docs/assets/js/vendor/FileSaver.js
+299 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/FileSaver.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry docs/assets/js/vendor/ZeroClipboard.min.js
+301 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/ZeroClipboard.min.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry docs/assets/js/vendor/autoprefixer.js
+303 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/autoprefixer.js', 438, 420 ]
+304 silly gunzTarPerm extractEntry docs/assets/js/vendor/holder.js
+305 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/holder.js', 438, 420 ]
+306 silly gunzTarPerm extractEntry docs/assets/js/vendor/jszip.min.js
+307 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/jszip.min.js', 438, 420 ]
+308 silly gunzTarPerm extractEntry docs/assets/js/vendor/less.min.js
+309 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/less.min.js', 438, 420 ]
+310 silly gunzTarPerm extractEntry docs/assets/js/vendor/uglify.min.js
+311 silly gunzTarPerm modified mode [ 'docs/assets/js/vendor/uglify.min.js', 438, 420 ]
+312 silly gunzTarPerm extractEntry docs/browser-bugs.html
+313 silly gunzTarPerm modified mode [ 'docs/browser-bugs.html', 438, 420 ]
+314 silly gunzTarPerm extractEntry docs/components.html
+315 silly gunzTarPerm modified mode [ 'docs/components.html', 438, 420 ]
+316 silly gunzTarPerm extractEntry docs/_data/browser-bugs.yml
+317 silly gunzTarPerm modified mode [ 'docs/_data/browser-bugs.yml', 438, 420 ]
+318 silly gunzTarPerm extractEntry docs/_data/core-team.yml
+319 silly gunzTarPerm modified mode [ 'docs/_data/core-team.yml', 438, 420 ]
+320 silly gunzTarPerm extractEntry docs/_data/glyphicons.yml
+321 silly gunzTarPerm modified mode [ 'docs/_data/glyphicons.yml', 438, 420 ]
+322 silly gunzTarPerm extractEntry docs/_data/sass-team.yml
+323 silly gunzTarPerm modified mode [ 'docs/_data/sass-team.yml', 438, 420 ]
+324 silly gunzTarPerm extractEntry docs/_data/showcase.yml
+325 silly gunzTarPerm modified mode [ 'docs/_data/showcase.yml', 438, 420 ]
+326 silly gunzTarPerm extractEntry docs/_data/translations.yml
+327 silly gunzTarPerm modified mode [ 'docs/_data/translations.yml', 438, 420 ]
+328 silly gunzTarPerm extractEntry docs/customize.html
+329 silly gunzTarPerm modified mode [ 'docs/customize.html', 438, 420 ]
+330 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.css
+331 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap-theme.css', 438, 420 ]
+332 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.css.map
+333 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap-theme.css.map', 438, 420 ]
+334 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.min.css
+335 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap-theme.min.css', 438, 420 ]
+336 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.css
+337 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap.css', 438, 420 ]
+338 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.css.map
+339 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap.css.map', 438, 420 ]
+340 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.min.css
+341 silly gunzTarPerm modified mode [ 'docs/dist/css/bootstrap.min.css', 438, 420 ]
+342 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.eot
+343 silly gunzTarPerm modified mode [ 'docs/dist/fonts/glyphicons-halflings-regular.eot', 438, 420 ]
+344 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.svg
+345 silly gunzTarPerm modified mode [ 'docs/dist/fonts/glyphicons-halflings-regular.svg', 438, 420 ]
+346 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.ttf
+347 silly gunzTarPerm modified mode [ 'docs/dist/fonts/glyphicons-halflings-regular.ttf', 438, 420 ]
+348 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.woff
+349 silly gunzTarPerm modified mode [ 'docs/dist/fonts/glyphicons-halflings-regular.woff', 438, 420 ]
+350 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.woff2
+351 silly gunzTarPerm modified mode [ 'docs/dist/fonts/glyphicons-halflings-regular.woff2',
+351 silly gunzTarPerm   438,
+351 silly gunzTarPerm   420 ]
+352 silly gunzTarPerm extractEntry docs/dist/js/bootstrap.js
+353 silly gunzTarPerm modified mode [ 'docs/dist/js/bootstrap.js', 438, 420 ]
+354 silly gunzTarPerm extractEntry docs/dist/js/bootstrap.min.js
+355 silly gunzTarPerm modified mode [ 'docs/dist/js/bootstrap.min.js', 438, 420 ]
+356 silly gunzTarPerm extractEntry docs/dist/js/npm.js
+357 silly gunzTarPerm modified mode [ 'docs/dist/js/npm.js', 438, 420 ]
+358 silly gunzTarPerm extractEntry docs/examples/navbar-static-top/index.html
+359 silly gunzTarPerm modified mode [ 'docs/examples/navbar-static-top/index.html', 438, 420 ]
+360 silly gunzTarPerm extractEntry docs/examples/navbar-static-top/navbar-static-top.css
+361 silly gunzTarPerm modified mode [ 'docs/examples/navbar-static-top/navbar-static-top.css',
+361 silly gunzTarPerm   438,
+361 silly gunzTarPerm   420 ]
+362 silly gunzTarPerm extractEntry docs/examples/blog/blog.css
+363 silly gunzTarPerm modified mode [ 'docs/examples/blog/blog.css', 438, 420 ]
+364 silly gunzTarPerm extractEntry docs/examples/blog/index.html
+365 silly gunzTarPerm modified mode [ 'docs/examples/blog/index.html', 438, 420 ]
+366 silly gunzTarPerm extractEntry docs/examples/cover/cover.css
+367 silly gunzTarPerm modified mode [ 'docs/examples/cover/cover.css', 438, 420 ]
+368 silly gunzTarPerm extractEntry docs/examples/cover/index.html
+369 silly gunzTarPerm modified mode [ 'docs/examples/cover/index.html', 438, 420 ]
+370 silly gunzTarPerm extractEntry docs/examples/dashboard/dashboard.css
+371 silly gunzTarPerm modified mode [ 'docs/examples/dashboard/dashboard.css', 438, 420 ]
+372 silly gunzTarPerm extractEntry docs/examples/dashboard/index.html
+373 silly gunzTarPerm modified mode [ 'docs/examples/dashboard/index.html', 438, 420 ]
+374 silly gunzTarPerm extractEntry docs/examples/grid/grid.css
+375 silly gunzTarPerm modified mode [ 'docs/examples/grid/grid.css', 438, 420 ]
+376 silly gunzTarPerm extractEntry docs/examples/grid/index.html
+377 silly gunzTarPerm modified mode [ 'docs/examples/grid/index.html', 438, 420 ]
+378 silly gunzTarPerm extractEntry docs/examples/jumbotron/index.html
+379 silly gunzTarPerm modified mode [ 'docs/examples/jumbotron/index.html', 438, 420 ]
+380 silly gunzTarPerm extractEntry docs/examples/jumbotron/jumbotron.css
+381 silly gunzTarPerm modified mode [ 'docs/examples/jumbotron/jumbotron.css', 438, 420 ]
+382 silly gunzTarPerm extractEntry docs/examples/jumbotron-narrow/index.html
+383 silly gunzTarPerm modified mode [ 'docs/examples/jumbotron-narrow/index.html', 438, 420 ]
+384 silly gunzTarPerm extractEntry docs/examples/jumbotron-narrow/jumbotron-narrow.css
+385 silly gunzTarPerm modified mode [ 'docs/examples/jumbotron-narrow/jumbotron-narrow.css',
+385 silly gunzTarPerm   438,
+385 silly gunzTarPerm   420 ]
+386 silly gunzTarPerm extractEntry docs/examples/justified-nav/index.html
+387 silly gunzTarPerm modified mode [ 'docs/examples/justified-nav/index.html', 438, 420 ]
+388 silly gunzTarPerm extractEntry docs/examples/justified-nav/justified-nav.css
+389 silly gunzTarPerm modified mode [ 'docs/examples/justified-nav/justified-nav.css', 438, 420 ]
+390 silly gunzTarPerm extractEntry docs/examples/navbar/index.html
+391 silly gunzTarPerm modified mode [ 'docs/examples/navbar/index.html', 438, 420 ]
+392 silly gunzTarPerm extractEntry docs/examples/navbar/navbar.css
+393 silly gunzTarPerm modified mode [ 'docs/examples/navbar/navbar.css', 438, 420 ]
+394 silly gunzTarPerm extractEntry docs/examples/navbar-fixed-top/index.html
+395 silly gunzTarPerm modified mode [ 'docs/examples/navbar-fixed-top/index.html', 438, 420 ]
+396 silly gunzTarPerm extractEntry docs/examples/navbar-fixed-top/navbar-fixed-top.css
+397 silly gunzTarPerm modified mode [ 'docs/examples/navbar-fixed-top/navbar-fixed-top.css',
+397 silly gunzTarPerm   438,
+397 silly gunzTarPerm   420 ]
+398 silly gunzTarPerm extractEntry docs/examples/carousel/carousel.css
+399 silly gunzTarPerm modified mode [ 'docs/examples/carousel/carousel.css', 438, 420 ]
+400 silly gunzTarPerm extractEntry docs/examples/carousel/index.html
+401 silly gunzTarPerm modified mode [ 'docs/examples/carousel/index.html', 438, 420 ]
+402 silly gunzTarPerm extractEntry docs/examples/non-responsive/index.html
+403 silly gunzTarPerm modified mode [ 'docs/examples/non-responsive/index.html', 438, 420 ]
+404 silly gunzTarPerm extractEntry docs/examples/non-responsive/non-responsive.css
+405 silly gunzTarPerm modified mode [ 'docs/examples/non-responsive/non-responsive.css', 438, 420 ]
+406 silly gunzTarPerm extractEntry docs/examples/offcanvas/offcanvas.js
+407 silly gunzTarPerm modified mode [ 'docs/examples/offcanvas/offcanvas.js', 438, 420 ]
+408 silly gunzTarPerm extractEntry docs/examples/offcanvas/index.html
+409 silly gunzTarPerm modified mode [ 'docs/examples/offcanvas/index.html', 438, 420 ]
+410 silly gunzTarPerm extractEntry docs/examples/offcanvas/offcanvas.css
+411 silly gunzTarPerm modified mode [ 'docs/examples/offcanvas/offcanvas.css', 438, 420 ]
+412 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar-fixed.jpg
+413 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/navbar-fixed.jpg', 438, 420 ]
+414 silly gunzTarPerm extractEntry docs/examples/screenshots/blog.jpg
+415 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/blog.jpg', 438, 420 ]
+416 silly gunzTarPerm extractEntry docs/examples/screenshots/cover.jpg
+417 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/cover.jpg', 438, 420 ]
+418 silly gunzTarPerm extractEntry docs/examples/screenshots/dashboard.jpg
+419 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/dashboard.jpg', 438, 420 ]
+420 silly gunzTarPerm extractEntry docs/examples/screenshots/equal-height-columns.jpg
+421 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/equal-height-columns.jpg',
+421 silly gunzTarPerm   438,
+421 silly gunzTarPerm   420 ]
+422 silly gunzTarPerm extractEntry docs/examples/screenshots/grid.jpg
+423 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/grid.jpg', 438, 420 ]
+424 silly gunzTarPerm extractEntry docs/examples/screenshots/jumbotron-narrow.jpg
+425 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/jumbotron-narrow.jpg', 438, 420 ]
+426 silly gunzTarPerm extractEntry docs/examples/screenshots/jumbotron.jpg
+427 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/jumbotron.jpg', 438, 420 ]
+428 silly gunzTarPerm extractEntry docs/examples/screenshots/justified-nav.jpg
+429 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/justified-nav.jpg', 438, 420 ]
+430 silly gunzTarPerm extractEntry docs/examples/screenshots/carousel.jpg
+431 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/carousel.jpg', 438, 420 ]
+432 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar-static.jpg
+433 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/navbar-static.jpg', 438, 420 ]
+434 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar.jpg
+435 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/navbar.jpg', 438, 420 ]
+436 silly gunzTarPerm extractEntry docs/examples/screenshots/non-responsive.jpg
+437 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/non-responsive.jpg', 438, 420 ]
+438 silly gunzTarPerm extractEntry docs/examples/screenshots/offcanvas.jpg
+439 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/offcanvas.jpg', 438, 420 ]
+440 silly gunzTarPerm extractEntry docs/examples/screenshots/sign-in.jpg
+441 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/sign-in.jpg', 438, 420 ]
+442 silly gunzTarPerm extractEntry docs/examples/screenshots/starter-template.jpg
+443 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/starter-template.jpg', 438, 420 ]
+444 silly gunzTarPerm extractEntry docs/examples/screenshots/sticky-footer-navbar.jpg
+445 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/sticky-footer-navbar.jpg',
+445 silly gunzTarPerm   438,
+445 silly gunzTarPerm   420 ]
+446 silly gunzTarPerm extractEntry docs/examples/screenshots/sticky-footer.jpg
+447 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/sticky-footer.jpg', 438, 420 ]
+448 silly gunzTarPerm extractEntry docs/examples/screenshots/theme.jpg
+449 silly gunzTarPerm modified mode [ 'docs/examples/screenshots/theme.jpg', 438, 420 ]
+450 silly gunzTarPerm extractEntry docs/examples/signin/index.html
+451 silly gunzTarPerm modified mode [ 'docs/examples/signin/index.html', 438, 420 ]
+452 silly gunzTarPerm extractEntry docs/examples/signin/signin.css
+453 silly gunzTarPerm modified mode [ 'docs/examples/signin/signin.css', 438, 420 ]
+454 silly gunzTarPerm extractEntry docs/examples/starter-template/index.html
+455 silly gunzTarPerm modified mode [ 'docs/examples/starter-template/index.html', 438, 420 ]
+456 silly gunzTarPerm extractEntry docs/examples/starter-template/starter-template.css
+457 silly gunzTarPerm modified mode [ 'docs/examples/starter-template/starter-template.css',
+457 silly gunzTarPerm   438,
+457 silly gunzTarPerm   420 ]
+458 silly gunzTarPerm extractEntry docs/examples/sticky-footer/index.html
+459 silly gunzTarPerm modified mode [ 'docs/examples/sticky-footer/index.html', 438, 420 ]
+460 silly gunzTarPerm extractEntry docs/examples/sticky-footer/sticky-footer.css
+461 silly gunzTarPerm modified mode [ 'docs/examples/sticky-footer/sticky-footer.css', 438, 420 ]
+462 silly gunzTarPerm extractEntry docs/examples/sticky-footer-navbar/index.html
+463 silly gunzTarPerm modified mode [ 'docs/examples/sticky-footer-navbar/index.html', 438, 420 ]
+464 silly gunzTarPerm extractEntry docs/examples/sticky-footer-navbar/sticky-footer-navbar.css
+465 silly gunzTarPerm modified mode [ 'docs/examples/sticky-footer-navbar/sticky-footer-navbar.css',
+465 silly gunzTarPerm   438,
+465 silly gunzTarPerm   420 ]
+466 silly gunzTarPerm extractEntry docs/examples/theme/index.html
+467 silly gunzTarPerm modified mode [ 'docs/examples/theme/index.html', 438, 420 ]
+468 silly gunzTarPerm extractEntry docs/examples/theme/theme.css
+469 silly gunzTarPerm modified mode [ 'docs/examples/theme/theme.css', 438, 420 ]
+470 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/tooltip-viewport.js
+471 silly gunzTarPerm modified mode [ 'docs/examples/tooltip-viewport/tooltip-viewport.js',
+471 silly gunzTarPerm   438,
+471 silly gunzTarPerm   420 ]
+472 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/index.html
+473 silly gunzTarPerm modified mode [ 'docs/examples/tooltip-viewport/index.html', 438, 420 ]
+474 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/tooltip-viewport.css
+475 silly gunzTarPerm modified mode [ 'docs/examples/tooltip-viewport/tooltip-viewport.css',
+475 silly gunzTarPerm   438,
+475 silly gunzTarPerm   420 ]
+476 silly gunzTarPerm extractEntry docs/favicon.ico
+477 silly gunzTarPerm modified mode [ 'docs/favicon.ico', 438, 420 ]
+478 silly gunzTarPerm extractEntry docs/getting-started.html
+479 silly gunzTarPerm modified mode [ 'docs/getting-started.html', 438, 420 ]
+480 silly gunzTarPerm extractEntry docs/index.html
+481 silly gunzTarPerm modified mode [ 'docs/index.html', 438, 420 ]
+482 silly gunzTarPerm extractEntry docs/javascript.html
+483 silly gunzTarPerm modified mode [ 'docs/javascript.html', 438, 420 ]
+484 silly gunzTarPerm extractEntry docs/migration.html
+485 silly gunzTarPerm modified mode [ 'docs/migration.html', 438, 420 ]
+486 silly gunzTarPerm extractEntry docs/robots.txt
+487 silly gunzTarPerm modified mode [ 'docs/robots.txt', 438, 420 ]
+488 silly gunzTarPerm extractEntry docs/css.html
+489 silly gunzTarPerm modified mode [ 'docs/css.html', 438, 420 ]
+490 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.eot
+491 silly gunzTarPerm modified mode [ 'fonts/glyphicons-halflings-regular.eot', 438, 420 ]
+492 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.svg
+493 silly gunzTarPerm modified mode [ 'fonts/glyphicons-halflings-regular.svg', 438, 420 ]
+494 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.ttf
+495 silly gunzTarPerm modified mode [ 'fonts/glyphicons-halflings-regular.ttf', 438, 420 ]
+496 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff
+497 silly gunzTarPerm modified mode [ 'fonts/glyphicons-halflings-regular.woff', 438, 420 ]
+498 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff2
+499 silly gunzTarPerm modified mode [ 'fonts/glyphicons-halflings-regular.woff2', 438, 420 ]
+500 silly gunzTarPerm extractEntry grunt/bs-commonjs-generator.js
+501 silly gunzTarPerm modified mode [ 'grunt/bs-commonjs-generator.js', 438, 420 ]
+502 silly gunzTarPerm extractEntry grunt/bs-glyphicons-data-generator.js
+503 silly gunzTarPerm modified mode [ 'grunt/bs-glyphicons-data-generator.js', 438, 420 ]
+504 silly gunzTarPerm extractEntry grunt/bs-lessdoc-parser.js
+505 silly gunzTarPerm modified mode [ 'grunt/bs-lessdoc-parser.js', 438, 420 ]
+506 silly gunzTarPerm extractEntry grunt/bs-raw-files-generator.js
+507 silly gunzTarPerm modified mode [ 'grunt/bs-raw-files-generator.js', 438, 420 ]
+508 silly gunzTarPerm extractEntry grunt/.jshintrc
+509 silly gunzTarPerm modified mode [ 'grunt/.jshintrc', 438, 420 ]
+510 silly gunzTarPerm extractEntry grunt/configBridge.json
+511 silly gunzTarPerm modified mode [ 'grunt/configBridge.json', 438, 420 ]
+512 silly gunzTarPerm extractEntry grunt/sauce_browsers.yml
+513 silly gunzTarPerm modified mode [ 'grunt/sauce_browsers.yml', 438, 420 ]
+514 silly gunzTarPerm extractEntry js/transition.js
+515 silly gunzTarPerm modified mode [ 'js/transition.js', 438, 420 ]
+516 silly gunzTarPerm extractEntry js/alert.js
+517 silly gunzTarPerm modified mode [ 'js/alert.js', 438, 420 ]
+518 silly gunzTarPerm extractEntry js/button.js
+519 silly gunzTarPerm modified mode [ 'js/button.js', 438, 420 ]
+520 silly gunzTarPerm extractEntry js/carousel.js
+521 silly gunzTarPerm modified mode [ 'js/carousel.js', 438, 420 ]
+522 silly gunzTarPerm extractEntry js/affix.js
+523 silly gunzTarPerm modified mode [ 'js/affix.js', 438, 420 ]
+524 silly gunzTarPerm extractEntry js/tooltip.js
+525 silly gunzTarPerm modified mode [ 'js/tooltip.js', 438, 420 ]
+526 silly gunzTarPerm extractEntry js/modal.js
+527 silly gunzTarPerm modified mode [ 'js/modal.js', 438, 420 ]
+528 silly gunzTarPerm extractEntry js/popover.js
+529 silly gunzTarPerm modified mode [ 'js/popover.js', 438, 420 ]
+530 silly gunzTarPerm extractEntry js/scrollspy.js
+531 silly gunzTarPerm modified mode [ 'js/scrollspy.js', 438, 420 ]
+532 silly gunzTarPerm extractEntry js/tab.js
+533 silly gunzTarPerm modified mode [ 'js/tab.js', 438, 420 ]
+534 silly gunzTarPerm extractEntry js/collapse.js
+535 silly gunzTarPerm modified mode [ 'js/collapse.js', 438, 420 ]
+536 silly gunzTarPerm extractEntry js/dropdown.js
+537 silly gunzTarPerm modified mode [ 'js/dropdown.js', 438, 420 ]
+538 silly gunzTarPerm extractEntry js/tests/index.html
+539 silly gunzTarPerm modified mode [ 'js/tests/index.html', 438, 420 ]
+540 silly gunzTarPerm extractEntry js/tests/unit/tooltip.js
+541 silly gunzTarPerm modified mode [ 'js/tests/unit/tooltip.js', 438, 420 ]
+542 silly gunzTarPerm extractEntry js/tests/unit/button.js
+543 silly gunzTarPerm modified mode [ 'js/tests/unit/button.js', 438, 420 ]
+544 silly gunzTarPerm extractEntry js/tests/unit/carousel.js
+545 silly gunzTarPerm modified mode [ 'js/tests/unit/carousel.js', 438, 420 ]
+546 silly gunzTarPerm extractEntry js/tests/unit/collapse.js
+547 silly gunzTarPerm modified mode [ 'js/tests/unit/collapse.js', 438, 420 ]
+548 silly gunzTarPerm extractEntry js/tests/unit/alert.js
+549 silly gunzTarPerm modified mode [ 'js/tests/unit/alert.js', 438, 420 ]
+550 silly gunzTarPerm extractEntry js/tests/unit/modal.js
+551 silly gunzTarPerm modified mode [ 'js/tests/unit/modal.js', 438, 420 ]
+552 silly gunzTarPerm extractEntry js/tests/unit/phantom.js
+553 silly gunzTarPerm modified mode [ 'js/tests/unit/phantom.js', 438, 420 ]
+554 silly gunzTarPerm extractEntry js/tests/unit/popover.js
+555 silly gunzTarPerm modified mode [ 'js/tests/unit/popover.js', 438, 420 ]
+556 silly gunzTarPerm extractEntry js/tests/unit/scrollspy.js
+557 silly gunzTarPerm modified mode [ 'js/tests/unit/scrollspy.js', 438, 420 ]
+558 silly gunzTarPerm extractEntry js/tests/unit/tab.js
+559 silly gunzTarPerm modified mode [ 'js/tests/unit/tab.js', 438, 420 ]
+560 silly gunzTarPerm extractEntry js/tests/unit/affix.js
+561 silly gunzTarPerm modified mode [ 'js/tests/unit/affix.js', 438, 420 ]
+562 silly gunzTarPerm extractEntry js/tests/unit/dropdown.js
+563 silly gunzTarPerm modified mode [ 'js/tests/unit/dropdown.js', 438, 420 ]
+564 silly gunzTarPerm extractEntry js/tests/unit/.jshintrc
+565 silly gunzTarPerm modified mode [ 'js/tests/unit/.jshintrc', 438, 420 ]
+566 silly gunzTarPerm extractEntry js/tests/vendor/jquery.min.js
+567 silly gunzTarPerm modified mode [ 'js/tests/vendor/jquery.min.js', 438, 420 ]
+568 silly gunzTarPerm extractEntry js/tests/vendor/qunit.js
+569 silly gunzTarPerm modified mode [ 'js/tests/vendor/qunit.js', 438, 420 ]
+570 silly gunzTarPerm extractEntry js/tests/vendor/qunit.css
+571 silly gunzTarPerm modified mode [ 'js/tests/vendor/qunit.css', 438, 420 ]
+572 silly gunzTarPerm extractEntry js/tests/visual/dropdown.html
+573 silly gunzTarPerm modified mode [ 'js/tests/visual/dropdown.html', 438, 420 ]
+574 silly gunzTarPerm extractEntry js/tests/visual/affix.html
+575 silly gunzTarPerm modified mode [ 'js/tests/visual/affix.html', 438, 420 ]
+576 silly gunzTarPerm extractEntry js/tests/visual/button.html
+577 silly gunzTarPerm modified mode [ 'js/tests/visual/button.html', 438, 420 ]
+578 silly gunzTarPerm extractEntry js/tests/visual/carousel.html
+579 silly gunzTarPerm modified mode [ 'js/tests/visual/carousel.html', 438, 420 ]
+580 silly gunzTarPerm extractEntry js/tests/visual/collapse.html
+581 silly gunzTarPerm modified mode [ 'js/tests/visual/collapse.html', 438, 420 ]
+582 silly gunzTarPerm extractEntry js/tests/visual/alert.html
+583 silly gunzTarPerm modified mode [ 'js/tests/visual/alert.html', 438, 420 ]
+584 silly gunzTarPerm extractEntry js/tests/visual/modal.html
+585 silly gunzTarPerm modified mode [ 'js/tests/visual/modal.html', 438, 420 ]
+586 silly gunzTarPerm extractEntry js/tests/visual/popover.html
+587 silly gunzTarPerm modified mode [ 'js/tests/visual/popover.html', 438, 420 ]
+588 silly gunzTarPerm extractEntry js/tests/visual/scrollspy.html
+589 silly gunzTarPerm modified mode [ 'js/tests/visual/scrollspy.html', 438, 420 ]
+590 silly gunzTarPerm extractEntry js/tests/visual/tab.html
+591 silly gunzTarPerm modified mode [ 'js/tests/visual/tab.html', 438, 420 ]
+592 silly gunzTarPerm extractEntry js/tests/visual/tooltip.html
+593 silly gunzTarPerm modified mode [ 'js/tests/visual/tooltip.html', 438, 420 ]
+594 silly gunzTarPerm extractEntry js/.jshintrc
+595 silly gunzTarPerm modified mode [ 'js/.jshintrc', 438, 420 ]
+596 silly gunzTarPerm extractEntry js/.jscsrc
+597 silly gunzTarPerm modified mode [ 'js/.jscsrc', 438, 420 ]
+598 silly gunzTarPerm extractEntry less/mixins.less
+599 silly gunzTarPerm modified mode [ 'less/mixins.less', 438, 420 ]
+600 silly gunzTarPerm extractEntry less/.csscomb.json
+601 silly gunzTarPerm modified mode [ 'less/.csscomb.json', 438, 420 ]
+602 silly gunzTarPerm extractEntry less/alerts.less
+603 silly gunzTarPerm modified mode [ 'less/alerts.less', 438, 420 ]
+604 silly gunzTarPerm extractEntry less/badges.less
+605 silly gunzTarPerm modified mode [ 'less/badges.less', 438, 420 ]
+606 silly gunzTarPerm extractEntry less/bootstrap.less
+607 silly gunzTarPerm modified mode [ 'less/bootstrap.less', 438, 420 ]
+608 silly gunzTarPerm extractEntry less/breadcrumbs.less
+609 silly gunzTarPerm modified mode [ 'less/breadcrumbs.less', 438, 420 ]
+610 silly gunzTarPerm extractEntry less/button-groups.less
+611 silly gunzTarPerm modified mode [ 'less/button-groups.less', 438, 420 ]
+612 silly gunzTarPerm extractEntry less/buttons.less
+613 silly gunzTarPerm modified mode [ 'less/buttons.less', 438, 420 ]
+614 silly gunzTarPerm extractEntry less/carousel.less
+615 silly gunzTarPerm modified mode [ 'less/carousel.less', 438, 420 ]
+616 silly gunzTarPerm extractEntry less/close.less
+617 silly gunzTarPerm modified mode [ 'less/close.less', 438, 420 ]
+618 silly gunzTarPerm extractEntry less/code.less
+619 silly gunzTarPerm modified mode [ 'less/code.less', 438, 420 ]
+620 silly gunzTarPerm extractEntry less/component-animations.less
+621 silly gunzTarPerm modified mode [ 'less/component-animations.less', 438, 420 ]
+622 silly gunzTarPerm extractEntry less/dropdowns.less
+623 silly gunzTarPerm modified mode [ 'less/dropdowns.less', 438, 420 ]
+624 silly gunzTarPerm extractEntry less/forms.less
+625 silly gunzTarPerm modified mode [ 'less/forms.less', 438, 420 ]
+626 silly gunzTarPerm extractEntry less/glyphicons.less
+627 silly gunzTarPerm modified mode [ 'less/glyphicons.less', 438, 420 ]
+628 silly gunzTarPerm extractEntry less/grid.less
+629 silly gunzTarPerm modified mode [ 'less/grid.less', 438, 420 ]
+630 silly gunzTarPerm extractEntry less/input-groups.less
+631 silly gunzTarPerm modified mode [ 'less/input-groups.less', 438, 420 ]
+632 silly gunzTarPerm extractEntry less/jumbotron.less
+633 silly gunzTarPerm modified mode [ 'less/jumbotron.less', 438, 420 ]
+634 silly gunzTarPerm extractEntry less/labels.less
+635 silly gunzTarPerm modified mode [ 'less/labels.less', 438, 420 ]
+636 silly gunzTarPerm extractEntry less/list-group.less
+637 silly gunzTarPerm modified mode [ 'less/list-group.less', 438, 420 ]
+638 silly gunzTarPerm extractEntry less/media.less
+639 silly gunzTarPerm modified mode [ 'less/media.less', 438, 420 ]
+640 silly gunzTarPerm extractEntry less/mixins/nav-divider.less
+641 silly gunzTarPerm modified mode [ 'less/mixins/nav-divider.less', 438, 420 ]
+642 silly gunzTarPerm extractEntry less/mixins/alerts.less
+643 silly gunzTarPerm modified mode [ 'less/mixins/alerts.less', 438, 420 ]
+644 silly gunzTarPerm extractEntry less/mixins/border-radius.less
+645 silly gunzTarPerm modified mode [ 'less/mixins/border-radius.less', 438, 420 ]
+646 silly gunzTarPerm extractEntry less/mixins/buttons.less
+647 silly gunzTarPerm modified mode [ 'less/mixins/buttons.less', 438, 420 ]
+648 silly gunzTarPerm extractEntry less/mixins/center-block.less
+649 silly gunzTarPerm modified mode [ 'less/mixins/center-block.less', 438, 420 ]
+650 silly gunzTarPerm extractEntry less/mixins/clearfix.less
+651 silly gunzTarPerm modified mode [ 'less/mixins/clearfix.less', 438, 420 ]
+652 silly gunzTarPerm extractEntry less/mixins/forms.less
+653 silly gunzTarPerm modified mode [ 'less/mixins/forms.less', 438, 420 ]
+654 silly gunzTarPerm extractEntry less/mixins/gradients.less
+655 silly gunzTarPerm modified mode [ 'less/mixins/gradients.less', 438, 420 ]
+656 silly gunzTarPerm extractEntry less/mixins/grid-framework.less
+657 silly gunzTarPerm modified mode [ 'less/mixins/grid-framework.less', 438, 420 ]
+658 silly gunzTarPerm extractEntry less/mixins/grid.less
+659 silly gunzTarPerm modified mode [ 'less/mixins/grid.less', 438, 420 ]
+660 silly gunzTarPerm extractEntry less/mixins/hide-text.less
+661 silly gunzTarPerm modified mode [ 'less/mixins/hide-text.less', 438, 420 ]
+662 silly gunzTarPerm extractEntry less/mixins/image.less
+663 silly gunzTarPerm modified mode [ 'less/mixins/image.less', 438, 420 ]
+664 silly gunzTarPerm extractEntry less/mixins/labels.less
+665 silly gunzTarPerm modified mode [ 'less/mixins/labels.less', 438, 420 ]
+666 silly gunzTarPerm extractEntry less/mixins/list-group.less
+667 silly gunzTarPerm modified mode [ 'less/mixins/list-group.less', 438, 420 ]
+668 silly gunzTarPerm extractEntry less/mixins/background-variant.less
+669 silly gunzTarPerm modified mode [ 'less/mixins/background-variant.less', 438, 420 ]
+670 silly gunzTarPerm extractEntry less/mixins/nav-vertical-align.less
+671 silly gunzTarPerm modified mode [ 'less/mixins/nav-vertical-align.less', 438, 420 ]
+672 silly gunzTarPerm extractEntry less/mixins/opacity.less
+673 silly gunzTarPerm modified mode [ 'less/mixins/opacity.less', 438, 420 ]
+674 silly gunzTarPerm extractEntry less/mixins/pagination.less
+675 silly gunzTarPerm modified mode [ 'less/mixins/pagination.less', 438, 420 ]
+676 silly gunzTarPerm extractEntry less/mixins/panels.less
+677 silly gunzTarPerm modified mode [ 'less/mixins/panels.less', 438, 420 ]
+678 silly gunzTarPerm extractEntry less/mixins/progress-bar.less
+679 silly gunzTarPerm modified mode [ 'less/mixins/progress-bar.less', 438, 420 ]
+680 silly gunzTarPerm extractEntry less/mixins/reset-filter.less
+681 silly gunzTarPerm modified mode [ 'less/mixins/reset-filter.less', 438, 420 ]
+682 silly gunzTarPerm extractEntry less/mixins/resize.less
+683 silly gunzTarPerm modified mode [ 'less/mixins/resize.less', 438, 420 ]
+684 silly gunzTarPerm extractEntry less/mixins/responsive-visibility.less
+685 silly gunzTarPerm modified mode [ 'less/mixins/responsive-visibility.less', 438, 420 ]
+686 silly gunzTarPerm extractEntry less/mixins/size.less
+687 silly gunzTarPerm modified mode [ 'less/mixins/size.less', 438, 420 ]
+688 silly gunzTarPerm extractEntry less/mixins/tab-focus.less
+689 silly gunzTarPerm modified mode [ 'less/mixins/tab-focus.less', 438, 420 ]
+690 silly gunzTarPerm extractEntry less/mixins/table-row.less
+691 silly gunzTarPerm modified mode [ 'less/mixins/table-row.less', 438, 420 ]
+692 silly gunzTarPerm extractEntry less/mixins/text-emphasis.less
+693 silly gunzTarPerm modified mode [ 'less/mixins/text-emphasis.less', 438, 420 ]
+694 silly gunzTarPerm extractEntry less/mixins/text-overflow.less
+695 silly gunzTarPerm modified mode [ 'less/mixins/text-overflow.less', 438, 420 ]
+696 silly gunzTarPerm extractEntry less/mixins/vendor-prefixes.less
+697 silly gunzTarPerm modified mode [ 'less/mixins/vendor-prefixes.less', 438, 420 ]
+698 silly gunzTarPerm extractEntry less/.csslintrc
+699 silly gunzTarPerm modified mode [ 'less/.csslintrc', 438, 420 ]
+700 silly gunzTarPerm extractEntry less/modals.less
+701 silly gunzTarPerm modified mode [ 'less/modals.less', 438, 420 ]
+702 silly gunzTarPerm extractEntry less/navbar.less
+703 silly gunzTarPerm modified mode [ 'less/navbar.less', 438, 420 ]
+704 silly gunzTarPerm extractEntry less/navs.less
+705 silly gunzTarPerm modified mode [ 'less/navs.less', 438, 420 ]
+706 silly gunzTarPerm extractEntry less/normalize.less
+707 silly gunzTarPerm modified mode [ 'less/normalize.less', 438, 420 ]
+708 silly gunzTarPerm extractEntry less/pager.less
+709 silly gunzTarPerm modified mode [ 'less/pager.less', 438, 420 ]
+710 silly gunzTarPerm extractEntry less/pagination.less
+711 silly gunzTarPerm modified mode [ 'less/pagination.less', 438, 420 ]
+712 silly gunzTarPerm extractEntry less/panels.less
+713 silly gunzTarPerm modified mode [ 'less/panels.less', 438, 420 ]
+714 silly gunzTarPerm extractEntry less/popovers.less
+715 silly gunzTarPerm modified mode [ 'less/popovers.less', 438, 420 ]
+716 silly gunzTarPerm extractEntry less/print.less
+717 silly gunzTarPerm modified mode [ 'less/print.less', 438, 420 ]
+718 silly gunzTarPerm extractEntry less/progress-bars.less
+719 silly gunzTarPerm modified mode [ 'less/progress-bars.less', 438, 420 ]
+720 silly gunzTarPerm extractEntry less/responsive-embed.less
+721 silly gunzTarPerm modified mode [ 'less/responsive-embed.less', 438, 420 ]
+722 silly gunzTarPerm extractEntry less/responsive-utilities.less
+723 silly gunzTarPerm modified mode [ 'less/responsive-utilities.less', 438, 420 ]
+724 silly gunzTarPerm extractEntry less/scaffolding.less
+725 silly gunzTarPerm modified mode [ 'less/scaffolding.less', 438, 420 ]
+726 silly gunzTarPerm extractEntry less/tables.less
+727 silly gunzTarPerm modified mode [ 'less/tables.less', 438, 420 ]
+728 silly gunzTarPerm extractEntry less/theme.less
+729 silly gunzTarPerm modified mode [ 'less/theme.less', 438, 420 ]
+730 silly gunzTarPerm extractEntry less/thumbnails.less
+731 silly gunzTarPerm modified mode [ 'less/thumbnails.less', 438, 420 ]
+732 silly gunzTarPerm extractEntry less/tooltip.less
+733 silly gunzTarPerm modified mode [ 'less/tooltip.less', 438, 420 ]
+734 silly gunzTarPerm extractEntry less/type.less
+735 silly gunzTarPerm modified mode [ 'less/type.less', 438, 420 ]
+736 silly gunzTarPerm extractEntry less/utilities.less
+737 silly gunzTarPerm modified mode [ 'less/utilities.less', 438, 420 ]
+738 silly gunzTarPerm extractEntry less/variables.less
+739 silly gunzTarPerm modified mode [ 'less/variables.less', 438, 420 ]
+740 silly gunzTarPerm extractEntry less/wells.less
+741 silly gunzTarPerm modified mode [ 'less/wells.less', 438, 420 ]
+742 silly gunzTarPerm extractEntry CONTRIBUTING.md
+743 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 420 ]
+744 silly gunzTarPerm extractEntry test-infra/README.md
+745 silly gunzTarPerm modified mode [ 'test-infra/README.md', 438, 420 ]
+746 silly gunzTarPerm extractEntry test-infra/S3Cachefile.json
+747 silly gunzTarPerm modified mode [ 'test-infra/S3Cachefile.json', 438, 420 ]
+748 silly gunzTarPerm extractEntry test-infra/npm-shrinkwrap.json
+749 silly gunzTarPerm modified mode [ 'test-infra/npm-shrinkwrap.json', 438, 420 ]
+750 silly gunzTarPerm extractEntry test-infra/requirements.txt
+751 silly gunzTarPerm modified mode [ 'test-infra/requirements.txt', 438, 420 ]
+752 silly gunzTarPerm extractEntry test-infra/s3_cache.py
+753 silly gunzTarPerm modified mode [ 'test-infra/s3_cache.py', 438, 420 ]
+754 silly gunzTarPerm extractEntry test-infra/uncached-npm-install.sh
+755 silly gunzTarPerm modified mode [ 'test-infra/uncached-npm-install.sh', 438, 420 ]
+756 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+757 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+758 silly lockFile 018c563f-26022-0-9225942685734481-tmp-tgz tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz
+759 silly lockFile 018c563f-26022-0-9225942685734481-tmp-tgz tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/tmp.tgz
+760 verbose tar pack [ '/home/vagrant/.npm/bootstrap/3.3.2/package.tgz',
+760 verbose tar pack   '/home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package' ]
+761 verbose tarball /home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+762 verbose folder /home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+763 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+764 verbose lock tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package /home/vagrant/.npm/00e5483a-26022-0-9225942685734481-package.lock
+765 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+766 verbose lock tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz /home/vagrant/.npm/7b12b596--npm-bootstrap-3-3-2-package-tgz.lock
+767 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+768 silly lockFile 00e5483a-26022-0-9225942685734481-package tar:///home/vagrant/tmp/npm-14485-3kWqivdB/1423256726022-0.9225942685734481/package
+769 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+770 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+771 silly lockFile 2fa9f458-rant-npm-bootstrap-3-3-2-package /home/vagrant/.npm/bootstrap/3.3.2/package
+772 verbose lock /home/vagrant/.npm/bootstrap/3.3.2/package /home/vagrant/.npm/2fa9f458-rant-npm-bootstrap-3-3-2-package.lock
+773 silly lockFile 2fa9f458-rant-npm-bootstrap-3-3-2-package /home/vagrant/.npm/bootstrap/3.3.2/package
+774 silly lockFile 2fa9f458-rant-npm-bootstrap-3-3-2-package /home/vagrant/.npm/bootstrap/3.3.2/package
+775 verbose tar unpack /home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+776 silly lockFile 67a5853c-rant-npm-bootstrap-3-3-2-package tar:///home/vagrant/.npm/bootstrap/3.3.2/package
+777 verbose lock tar:///home/vagrant/.npm/bootstrap/3.3.2/package /home/vagrant/.npm/67a5853c-rant-npm-bootstrap-3-3-2-package.lock
+778 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+779 verbose lock tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz /home/vagrant/.npm/7b12b596--npm-bootstrap-3-3-2-package-tgz.lock
+780 silly gunzTarPerm modes [ '755', '644' ]
+781 silly gunzTarPerm extractEntry package.json
+782 silly gunzTarPerm extractEntry .npmignore
+783 silly gunzTarPerm extractEntry README.md
+784 silly gunzTarPerm extractEntry LICENSE
+785 silly gunzTarPerm extractEntry Gruntfile.js
+786 silly gunzTarPerm extractEntry bower.json
+787 silly gunzTarPerm extractEntry .editorconfig
+788 silly gunzTarPerm extractEntry .travis.yml
+789 silly gunzTarPerm extractEntry CNAME
+790 silly gunzTarPerm extractEntry _config.yml
+791 silly gunzTarPerm extractEntry .gitattributes
+792 silly gunzTarPerm extractEntry composer.json
+793 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css
+794 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css.map
+795 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css
+796 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+797 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+798 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+799 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.eot
+800 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.svg
+801 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.ttf
+802 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff
+803 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff2
+804 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+805 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+806 silly gunzTarPerm extractEntry dist/js/npm.js
+807 silly gunzTarPerm extractEntry docs/LICENSE
+808 silly gunzTarPerm extractEntry docs/sitemap.xml
+809 silly gunzTarPerm extractEntry docs/_includes/ads.html
+810 silly gunzTarPerm extractEntry docs/_includes/components/list-group.html
+811 silly gunzTarPerm extractEntry docs/_includes/components/alerts.html
+812 silly gunzTarPerm extractEntry docs/_includes/components/breadcrumbs.html
+813 silly gunzTarPerm extractEntry docs/_includes/components/button-dropdowns.html
+814 silly gunzTarPerm extractEntry docs/_includes/components/button-groups.html
+815 silly gunzTarPerm extractEntry docs/_includes/components/dropdowns.html
+816 silly gunzTarPerm extractEntry docs/_includes/components/glyphicons.html
+817 silly gunzTarPerm extractEntry docs/_includes/components/input-groups.html
+818 silly gunzTarPerm extractEntry docs/_includes/components/jumbotron.html
+819 silly gunzTarPerm extractEntry docs/_includes/components/labels.html
+820 silly gunzTarPerm extractEntry docs/_includes/components/badges.html
+821 silly gunzTarPerm extractEntry docs/_includes/components/media.html
+822 silly gunzTarPerm extractEntry docs/_includes/components/navbar.html
+823 silly gunzTarPerm extractEntry docs/_includes/components/navs.html
+824 silly gunzTarPerm extractEntry docs/_includes/components/page-header.html
+825 silly gunzTarPerm extractEntry docs/_includes/components/pagination.html
+826 silly gunzTarPerm extractEntry docs/_includes/components/panels.html
+827 silly gunzTarPerm extractEntry docs/_includes/components/progress-bars.html
+828 silly gunzTarPerm extractEntry docs/_includes/components/responsive-embed.html
+829 silly gunzTarPerm extractEntry docs/_includes/components/thumbnails.html
+830 silly gunzTarPerm extractEntry docs/_includes/components/wells.html
+831 silly gunzTarPerm extractEntry docs/_includes/css/less.html
+832 silly gunzTarPerm extractEntry docs/_includes/css/buttons.html
+833 silly gunzTarPerm extractEntry docs/_includes/css/forms.html
+834 silly gunzTarPerm extractEntry docs/_includes/css/grid.html
+835 silly gunzTarPerm extractEntry docs/_includes/css/helpers.html
+836 silly gunzTarPerm extractEntry docs/_includes/css/images.html
+837 silly gunzTarPerm extractEntry docs/_includes/css/code.html
+838 silly gunzTarPerm extractEntry docs/_includes/css/overview.html
+839 silly gunzTarPerm extractEntry docs/_includes/css/responsive-utilities.html
+840 silly gunzTarPerm extractEntry docs/_includes/css/sass.html
+841 silly gunzTarPerm extractEntry docs/_includes/css/tables.html
+842 silly gunzTarPerm extractEntry docs/_includes/css/type.html
+843 silly gunzTarPerm extractEntry docs/_includes/customizer-variables.html
+844 silly gunzTarPerm extractEntry docs/_includes/footer.html
+845 silly gunzTarPerm extractEntry docs/_includes/getting-started/grunt.html
+846 silly gunzTarPerm extractEntry docs/_includes/getting-started/accessibility.html
+847 silly gunzTarPerm extractEntry docs/_includes/getting-started/community.html
+848 silly gunzTarPerm extractEntry docs/_includes/getting-started/disabling-responsiveness.html
+849 silly gunzTarPerm extractEntry docs/_includes/getting-started/download.html
+850 silly gunzTarPerm extractEntry docs/_includes/getting-started/examples.html
+851 silly gunzTarPerm extractEntry docs/_includes/getting-started/browser-device-support.html
+852 silly gunzTarPerm extractEntry docs/_includes/getting-started/license.html
+853 silly gunzTarPerm extractEntry docs/_includes/getting-started/template.html
+854 silly gunzTarPerm extractEntry docs/_includes/getting-started/third-party-support.html
+855 silly gunzTarPerm extractEntry docs/_includes/getting-started/tools.html
+856 silly gunzTarPerm extractEntry docs/_includes/getting-started/translations.html
+857 silly gunzTarPerm extractEntry docs/_includes/getting-started/whats-included.html
+858 silly gunzTarPerm extractEntry docs/_includes/header.html
+859 silly gunzTarPerm extractEntry docs/_includes/js/modal.html
+860 silly gunzTarPerm extractEntry docs/_includes/js/affix.html
+861 silly gunzTarPerm extractEntry docs/_includes/js/buttons.html
+862 silly gunzTarPerm extractEntry docs/_includes/js/carousel.html
+863 silly gunzTarPerm extractEntry docs/_includes/js/collapse.html
+864 silly gunzTarPerm extractEntry docs/_includes/js/dropdowns.html
+865 silly gunzTarPerm extractEntry docs/_includes/js/alerts.html
+866 silly gunzTarPerm extractEntry docs/_includes/js/overview.html
+867 silly gunzTarPerm extractEntry docs/_includes/js/popovers.html
+868 silly gunzTarPerm extractEntry docs/_includes/js/scrollspy.html
+869 silly gunzTarPerm extractEntry docs/_includes/js/tabs.html
+870 silly gunzTarPerm extractEntry docs/_includes/js/tooltips.html
+871 silly gunzTarPerm extractEntry docs/_includes/js/transitions.html
+872 silly gunzTarPerm extractEntry docs/_includes/nav/about.html
+873 silly gunzTarPerm extractEntry docs/_includes/nav/components.html
+874 silly gunzTarPerm extractEntry docs/_includes/nav/css.html
+875 silly gunzTarPerm extractEntry docs/_includes/nav/customize.html
+876 silly gunzTarPerm extractEntry docs/_includes/nav/getting-started.html
+877 silly gunzTarPerm extractEntry docs/_includes/nav/javascript.html
+878 silly gunzTarPerm extractEntry docs/_includes/nav/main.html
+879 silly gunzTarPerm extractEntry docs/_includes/nav/migration.html
+880 silly gunzTarPerm extractEntry docs/_includes/social-buttons.html
+881 silly gunzTarPerm extractEntry docs/_jade/customizer-nav.jade
+882 silly gunzTarPerm extractEntry docs/_jade/customizer-variables.jade
+883 silly gunzTarPerm extractEntry docs/_layouts/default.html
+884 silly gunzTarPerm extractEntry docs/_layouts/home.html
+885 silly gunzTarPerm extractEntry docs/_plugins/bridge.rb
+886 silly gunzTarPerm extractEntry docs/_plugins/bugify.rb
+887 silly gunzTarPerm extractEntry docs/about.html
+888 silly gunzTarPerm extractEntry docs/apple-touch-icon.png
+889 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-outline.svg
+890 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-punchout.svg
+891 silly gunzTarPerm extractEntry docs/assets/brand/bootstrap-solid.svg
+892 silly gunzTarPerm extractEntry docs/assets/css/docs.min.css
+893 silly gunzTarPerm extractEntry docs/assets/css/src/docs.css
+894 silly gunzTarPerm extractEntry docs/assets/css/src/pygments-manni.css
+895 silly gunzTarPerm extractEntry docs/assets/flash/ZeroClipboard.swf
+896 silly gunzTarPerm extractEntry docs/assets/img/components.png
+897 silly gunzTarPerm extractEntry docs/assets/img/devices.png
+898 silly gunzTarPerm extractEntry docs/assets/img/sass-less.png
+899 silly gunzTarPerm extractEntry docs/assets/js/customize.min.js
+900 silly gunzTarPerm extractEntry docs/assets/js/docs.min.js
+901 silly gunzTarPerm extractEntry docs/assets/js/ie-emulation-modes-warning.js
+902 silly gunzTarPerm extractEntry docs/assets/js/ie10-viewport-bug-workaround.js
+903 silly gunzTarPerm extractEntry docs/assets/js/ie8-responsive-file-warning.js
+904 silly gunzTarPerm extractEntry docs/assets/js/raw-files.min.js
+905 silly gunzTarPerm extractEntry docs/assets/js/src/application.js
+906 silly gunzTarPerm extractEntry docs/assets/js/src/customizer.js
+907 silly gunzTarPerm extractEntry docs/assets/js/vendor/Blob.js
+908 silly gunzTarPerm extractEntry docs/assets/js/vendor/FileSaver.js
+909 silly gunzTarPerm extractEntry docs/assets/js/vendor/ZeroClipboard.min.js
+910 silly gunzTarPerm extractEntry docs/assets/js/vendor/autoprefixer.js
+911 silly gunzTarPerm extractEntry docs/assets/js/vendor/holder.js
+912 silly gunzTarPerm extractEntry docs/assets/js/vendor/jszip.min.js
+913 silly gunzTarPerm extractEntry docs/assets/js/vendor/less.min.js
+914 silly gunzTarPerm extractEntry docs/assets/js/vendor/uglify.min.js
+915 silly gunzTarPerm extractEntry docs/browser-bugs.html
+916 silly gunzTarPerm extractEntry docs/components.html
+917 silly gunzTarPerm extractEntry docs/_data/browser-bugs.yml
+918 silly gunzTarPerm extractEntry docs/_data/core-team.yml
+919 silly gunzTarPerm extractEntry docs/_data/glyphicons.yml
+920 silly gunzTarPerm extractEntry docs/_data/sass-team.yml
+921 silly gunzTarPerm extractEntry docs/_data/showcase.yml
+922 silly gunzTarPerm extractEntry docs/_data/translations.yml
+923 silly gunzTarPerm extractEntry docs/customize.html
+924 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.css
+925 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.css.map
+926 silly gunzTarPerm extractEntry docs/dist/css/bootstrap-theme.min.css
+927 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.css
+928 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.css.map
+929 silly gunzTarPerm extractEntry docs/dist/css/bootstrap.min.css
+930 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.eot
+931 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.svg
+932 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.ttf
+933 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.woff
+934 silly gunzTarPerm extractEntry docs/dist/fonts/glyphicons-halflings-regular.woff2
+935 silly gunzTarPerm extractEntry docs/dist/js/bootstrap.js
+936 silly gunzTarPerm extractEntry docs/dist/js/bootstrap.min.js
+937 silly gunzTarPerm extractEntry docs/dist/js/npm.js
+938 silly gunzTarPerm extractEntry docs/examples/navbar-static-top/index.html
+939 silly gunzTarPerm extractEntry docs/examples/navbar-static-top/navbar-static-top.css
+940 silly gunzTarPerm extractEntry docs/examples/blog/blog.css
+941 silly gunzTarPerm extractEntry docs/examples/blog/index.html
+942 silly gunzTarPerm extractEntry docs/examples/cover/cover.css
+943 silly gunzTarPerm extractEntry docs/examples/cover/index.html
+944 silly gunzTarPerm extractEntry docs/examples/dashboard/dashboard.css
+945 silly gunzTarPerm extractEntry docs/examples/dashboard/index.html
+946 silly gunzTarPerm extractEntry docs/examples/grid/grid.css
+947 silly gunzTarPerm extractEntry docs/examples/grid/index.html
+948 silly gunzTarPerm extractEntry docs/examples/jumbotron/index.html
+949 silly gunzTarPerm extractEntry docs/examples/jumbotron/jumbotron.css
+950 silly gunzTarPerm extractEntry docs/examples/jumbotron-narrow/index.html
+951 silly gunzTarPerm extractEntry docs/examples/jumbotron-narrow/jumbotron-narrow.css
+952 silly gunzTarPerm extractEntry docs/examples/justified-nav/index.html
+953 silly gunzTarPerm extractEntry docs/examples/justified-nav/justified-nav.css
+954 silly gunzTarPerm extractEntry docs/examples/navbar/index.html
+955 silly gunzTarPerm extractEntry docs/examples/navbar/navbar.css
+956 silly gunzTarPerm extractEntry docs/examples/navbar-fixed-top/index.html
+957 silly gunzTarPerm extractEntry docs/examples/navbar-fixed-top/navbar-fixed-top.css
+958 silly gunzTarPerm extractEntry docs/examples/carousel/carousel.css
+959 silly gunzTarPerm extractEntry docs/examples/carousel/index.html
+960 silly gunzTarPerm extractEntry docs/examples/non-responsive/index.html
+961 silly gunzTarPerm extractEntry docs/examples/non-responsive/non-responsive.css
+962 silly gunzTarPerm extractEntry docs/examples/offcanvas/offcanvas.js
+963 silly gunzTarPerm extractEntry docs/examples/offcanvas/index.html
+964 silly gunzTarPerm extractEntry docs/examples/offcanvas/offcanvas.css
+965 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar-fixed.jpg
+966 silly gunzTarPerm extractEntry docs/examples/screenshots/blog.jpg
+967 silly gunzTarPerm extractEntry docs/examples/screenshots/cover.jpg
+968 silly gunzTarPerm extractEntry docs/examples/screenshots/dashboard.jpg
+969 silly gunzTarPerm extractEntry docs/examples/screenshots/equal-height-columns.jpg
+970 silly gunzTarPerm extractEntry docs/examples/screenshots/grid.jpg
+971 silly gunzTarPerm extractEntry docs/examples/screenshots/jumbotron-narrow.jpg
+972 silly gunzTarPerm extractEntry docs/examples/screenshots/jumbotron.jpg
+973 silly gunzTarPerm extractEntry docs/examples/screenshots/justified-nav.jpg
+974 silly gunzTarPerm extractEntry docs/examples/screenshots/carousel.jpg
+975 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar-static.jpg
+976 silly gunzTarPerm extractEntry docs/examples/screenshots/navbar.jpg
+977 silly gunzTarPerm extractEntry docs/examples/screenshots/non-responsive.jpg
+978 silly gunzTarPerm extractEntry docs/examples/screenshots/offcanvas.jpg
+979 silly gunzTarPerm extractEntry docs/examples/screenshots/sign-in.jpg
+980 silly gunzTarPerm extractEntry docs/examples/screenshots/starter-template.jpg
+981 silly gunzTarPerm extractEntry docs/examples/screenshots/sticky-footer-navbar.jpg
+982 silly gunzTarPerm extractEntry docs/examples/screenshots/sticky-footer.jpg
+983 silly gunzTarPerm extractEntry docs/examples/screenshots/theme.jpg
+984 silly gunzTarPerm extractEntry docs/examples/signin/index.html
+985 silly gunzTarPerm extractEntry docs/examples/signin/signin.css
+986 silly gunzTarPerm extractEntry docs/examples/starter-template/index.html
+987 silly gunzTarPerm extractEntry docs/examples/starter-template/starter-template.css
+988 silly gunzTarPerm extractEntry docs/examples/sticky-footer/index.html
+989 silly gunzTarPerm extractEntry docs/examples/sticky-footer/sticky-footer.css
+990 silly gunzTarPerm extractEntry docs/examples/sticky-footer-navbar/index.html
+991 silly gunzTarPerm extractEntry docs/examples/sticky-footer-navbar/sticky-footer-navbar.css
+992 silly gunzTarPerm extractEntry docs/examples/theme/index.html
+993 silly gunzTarPerm extractEntry docs/examples/theme/theme.css
+994 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/tooltip-viewport.js
+995 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/index.html
+996 silly gunzTarPerm extractEntry docs/examples/tooltip-viewport/tooltip-viewport.css
+997 silly gunzTarPerm extractEntry docs/favicon.ico
+998 silly gunzTarPerm extractEntry docs/getting-started.html
+999 silly gunzTarPerm extractEntry docs/index.html
+1000 silly gunzTarPerm extractEntry docs/javascript.html
+1001 silly gunzTarPerm extractEntry docs/migration.html
+1002 silly gunzTarPerm extractEntry docs/robots.txt
+1003 silly gunzTarPerm extractEntry docs/css.html
+1004 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.eot
+1005 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.svg
+1006 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.ttf
+1007 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff
+1008 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff2
+1009 silly gunzTarPerm extractEntry grunt/bs-commonjs-generator.js
+1010 silly gunzTarPerm extractEntry grunt/bs-glyphicons-data-generator.js
+1011 silly gunzTarPerm extractEntry grunt/bs-lessdoc-parser.js
+1012 silly gunzTarPerm extractEntry grunt/bs-raw-files-generator.js
+1013 silly gunzTarPerm extractEntry grunt/.jshintrc
+1014 silly gunzTarPerm extractEntry grunt/configBridge.json
+1015 silly gunzTarPerm extractEntry grunt/sauce_browsers.yml
+1016 silly gunzTarPerm extractEntry js/transition.js
+1017 silly gunzTarPerm extractEntry js/alert.js
+1018 silly gunzTarPerm extractEntry js/button.js
+1019 silly gunzTarPerm extractEntry js/carousel.js
+1020 silly gunzTarPerm extractEntry js/affix.js
+1021 silly gunzTarPerm extractEntry js/tooltip.js
+1022 silly gunzTarPerm extractEntry js/modal.js
+1023 silly gunzTarPerm extractEntry js/popover.js
+1024 silly gunzTarPerm extractEntry js/scrollspy.js
+1025 silly gunzTarPerm extractEntry js/tab.js
+1026 silly gunzTarPerm extractEntry js/collapse.js
+1027 silly gunzTarPerm extractEntry js/dropdown.js
+1028 silly gunzTarPerm extractEntry js/tests/index.html
+1029 silly gunzTarPerm extractEntry js/tests/unit/tooltip.js
+1030 silly gunzTarPerm extractEntry js/tests/unit/button.js
+1031 silly gunzTarPerm extractEntry js/tests/unit/carousel.js
+1032 silly gunzTarPerm extractEntry js/tests/unit/collapse.js
+1033 silly gunzTarPerm extractEntry js/tests/unit/alert.js
+1034 silly gunzTarPerm extractEntry js/tests/unit/modal.js
+1035 silly gunzTarPerm extractEntry js/tests/unit/phantom.js
+1036 silly gunzTarPerm extractEntry js/tests/unit/popover.js
+1037 silly gunzTarPerm extractEntry js/tests/unit/scrollspy.js
+1038 silly gunzTarPerm extractEntry js/tests/unit/tab.js
+1039 silly gunzTarPerm extractEntry js/tests/unit/affix.js
+1040 silly gunzTarPerm extractEntry js/tests/unit/dropdown.js
+1041 silly gunzTarPerm extractEntry js/tests/unit/.jshintrc
+1042 silly gunzTarPerm extractEntry js/tests/vendor/jquery.min.js
+1043 silly gunzTarPerm extractEntry js/tests/vendor/qunit.js
+1044 silly gunzTarPerm extractEntry js/tests/vendor/qunit.css
+1045 silly gunzTarPerm extractEntry js/tests/visual/dropdown.html
+1046 silly gunzTarPerm extractEntry js/tests/visual/affix.html
+1047 silly gunzTarPerm extractEntry js/tests/visual/button.html
+1048 silly gunzTarPerm extractEntry js/tests/visual/carousel.html
+1049 silly gunzTarPerm extractEntry js/tests/visual/collapse.html
+1050 silly gunzTarPerm extractEntry js/tests/visual/alert.html
+1051 silly gunzTarPerm extractEntry js/tests/visual/modal.html
+1052 silly gunzTarPerm extractEntry js/tests/visual/popover.html
+1053 silly gunzTarPerm extractEntry js/tests/visual/scrollspy.html
+1054 silly gunzTarPerm extractEntry js/tests/visual/tab.html
+1055 silly gunzTarPerm extractEntry js/tests/visual/tooltip.html
+1056 silly gunzTarPerm extractEntry js/.jshintrc
+1057 silly gunzTarPerm extractEntry js/.jscsrc
+1058 silly gunzTarPerm extractEntry less/mixins.less
+1059 silly gunzTarPerm extractEntry less/.csscomb.json
+1060 silly gunzTarPerm extractEntry less/alerts.less
+1061 silly gunzTarPerm extractEntry less/badges.less
+1062 silly gunzTarPerm extractEntry less/bootstrap.less
+1063 silly gunzTarPerm extractEntry less/breadcrumbs.less
+1064 silly gunzTarPerm extractEntry less/button-groups.less
+1065 silly gunzTarPerm extractEntry less/buttons.less
+1066 silly gunzTarPerm extractEntry less/carousel.less
+1067 silly gunzTarPerm extractEntry less/close.less
+1068 silly gunzTarPerm extractEntry less/code.less
+1069 silly gunzTarPerm extractEntry less/component-animations.less
+1070 silly gunzTarPerm extractEntry less/dropdowns.less
+1071 silly gunzTarPerm extractEntry less/forms.less
+1072 silly gunzTarPerm extractEntry less/glyphicons.less
+1073 silly gunzTarPerm extractEntry less/grid.less
+1074 silly gunzTarPerm extractEntry less/input-groups.less
+1075 silly gunzTarPerm extractEntry less/jumbotron.less
+1076 silly gunzTarPerm extractEntry less/labels.less
+1077 silly gunzTarPerm extractEntry less/list-group.less
+1078 silly gunzTarPerm extractEntry less/media.less
+1079 silly gunzTarPerm extractEntry less/mixins/nav-divider.less
+1080 silly gunzTarPerm extractEntry less/mixins/alerts.less
+1081 silly gunzTarPerm extractEntry less/mixins/border-radius.less
+1082 silly gunzTarPerm extractEntry less/mixins/buttons.less
+1083 silly gunzTarPerm extractEntry less/mixins/center-block.less
+1084 silly gunzTarPerm extractEntry less/mixins/clearfix.less
+1085 silly gunzTarPerm extractEntry less/mixins/forms.less
+1086 silly gunzTarPerm extractEntry less/mixins/gradients.less
+1087 silly gunzTarPerm extractEntry less/mixins/grid-framework.less
+1088 silly gunzTarPerm extractEntry less/mixins/grid.less
+1089 silly gunzTarPerm extractEntry less/mixins/hide-text.less
+1090 silly gunzTarPerm extractEntry less/mixins/image.less
+1091 silly gunzTarPerm extractEntry less/mixins/labels.less
+1092 silly gunzTarPerm extractEntry less/mixins/list-group.less
+1093 silly gunzTarPerm extractEntry less/mixins/background-variant.less
+1094 silly gunzTarPerm extractEntry less/mixins/nav-vertical-align.less
+1095 silly gunzTarPerm extractEntry less/mixins/opacity.less
+1096 silly gunzTarPerm extractEntry less/mixins/pagination.less
+1097 silly gunzTarPerm extractEntry less/mixins/panels.less
+1098 silly gunzTarPerm extractEntry less/mixins/progress-bar.less
+1099 silly gunzTarPerm extractEntry less/mixins/reset-filter.less
+1100 silly gunzTarPerm extractEntry less/mixins/resize.less
+1101 silly gunzTarPerm extractEntry less/mixins/responsive-visibility.less
+1102 silly gunzTarPerm extractEntry less/mixins/size.less
+1103 silly gunzTarPerm extractEntry less/mixins/tab-focus.less
+1104 silly gunzTarPerm extractEntry less/mixins/table-row.less
+1105 silly gunzTarPerm extractEntry less/mixins/text-emphasis.less
+1106 silly gunzTarPerm extractEntry less/mixins/text-overflow.less
+1107 silly gunzTarPerm extractEntry less/mixins/vendor-prefixes.less
+1108 silly gunzTarPerm extractEntry less/.csslintrc
+1109 silly gunzTarPerm extractEntry less/modals.less
+1110 silly gunzTarPerm extractEntry less/navbar.less
+1111 silly gunzTarPerm extractEntry less/navs.less
+1112 silly gunzTarPerm extractEntry less/normalize.less
+1113 silly gunzTarPerm extractEntry less/pager.less
+1114 silly gunzTarPerm extractEntry less/pagination.less
+1115 silly gunzTarPerm extractEntry less/panels.less
+1116 silly gunzTarPerm extractEntry less/popovers.less
+1117 silly gunzTarPerm extractEntry less/print.less
+1118 silly gunzTarPerm extractEntry less/progress-bars.less
+1119 silly gunzTarPerm extractEntry less/responsive-embed.less
+1120 silly gunzTarPerm extractEntry less/responsive-utilities.less
+1121 silly gunzTarPerm extractEntry less/scaffolding.less
+1122 silly gunzTarPerm extractEntry less/tables.less
+1123 silly gunzTarPerm extractEntry less/theme.less
+1124 silly gunzTarPerm extractEntry less/thumbnails.less
+1125 silly gunzTarPerm extractEntry less/tooltip.less
+1126 silly gunzTarPerm extractEntry less/type.less
+1127 silly gunzTarPerm extractEntry less/utilities.less
+1128 silly gunzTarPerm extractEntry less/variables.less
+1129 silly gunzTarPerm extractEntry less/wells.less
+1130 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1131 silly gunzTarPerm extractEntry test-infra/README.md
+1132 silly gunzTarPerm extractEntry test-infra/S3Cachefile.json
+1133 silly gunzTarPerm extractEntry test-infra/npm-shrinkwrap.json
+1134 silly gunzTarPerm extractEntry test-infra/requirements.txt
+1135 silly gunzTarPerm extractEntry test-infra/s3_cache.py
+1136 silly gunzTarPerm extractEntry test-infra/uncached-npm-install.sh
+1137 silly lockFile 67a5853c-rant-npm-bootstrap-3-3-2-package tar:///home/vagrant/.npm/bootstrap/3.3.2/package
+1138 silly lockFile 67a5853c-rant-npm-bootstrap-3-3-2-package tar:///home/vagrant/.npm/bootstrap/3.3.2/package
+1139 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+1140 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+1141 verbose chmod /home/vagrant/.npm/bootstrap/3.3.2/package.tgz 644
+1142 verbose chown /home/vagrant/.npm/bootstrap/3.3.2/package.tgz [ 1000, 1000 ]
+1143 silly lockFile a81129cf-rg-bootstrap-bootstrap-3-3-2-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz
+1144 silly lockFile a81129cf-rg-bootstrap-bootstrap-3-3-2-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz
+1145 silly lockFile f16b9f02-bootstrap-3-3-2 bootstrap@3.3.2
+1146 silly lockFile f16b9f02-bootstrap-3-3-2 bootstrap@3.3.2
+1147 silly lockFile 2571d98f-bootstrap bootstrap@
+1148 silly lockFile 2571d98f-bootstrap bootstrap@
+1149 silly resolved [ { name: 'bootstrap',
+1149 silly resolved     description: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
+1149 silly resolved     version: '3.3.2',
+1149 silly resolved     keywords:
+1149 silly resolved      [ 'css',
+1149 silly resolved        'less',
+1149 silly resolved        'mobile-first',
+1149 silly resolved        'responsive',
+1149 silly resolved        'front-end',
+1149 silly resolved        'framework',
+1149 silly resolved        'web' ],
+1149 silly resolved     homepage: 'http://getbootstrap.com',
+1149 silly resolved     author: { name: 'Twitter, Inc.' },
+1149 silly resolved     scripts: { test: 'grunt test' },
+1149 silly resolved     style: 'dist/css/bootstrap.css',
+1149 silly resolved     less: 'less/bootstrap.less',
+1149 silly resolved     main: './dist/js/npm',
+1149 silly resolved     repository: { type: 'git', url: 'https://github.com/twbs/bootstrap.git' },
+1149 silly resolved     bugs: { url: 'https://github.com/twbs/bootstrap/issues' },
+1149 silly resolved     license:
+1149 silly resolved      { type: 'MIT',
+1149 silly resolved        url: 'https://github.com/twbs/bootstrap/blob/master/LICENSE' },
+1149 silly resolved     devDependencies:
+1149 silly resolved      { btoa: '~1.1.2',
+1149 silly resolved        glob: '~4.3.5',
+1149 silly resolved        grunt: '~0.4.5',
+1149 silly resolved        'grunt-autoprefixer': '~2.1.0',
+1149 silly resolved        'grunt-banner': '~0.3.1',
+1149 silly resolved        'grunt-contrib-clean': '~0.6.0',
+1149 silly resolved        'grunt-contrib-compress': '~0.13.0',
+1149 silly resolved        'grunt-contrib-concat': '~0.5.0',
+1149 silly resolved        'grunt-contrib-connect': '~0.9.0',
+1149 silly resolved        'grunt-contrib-copy': '~0.7.0',
+1149 silly resolved        'grunt-contrib-csslint': '~0.3.1',
+1149 silly resolved        'grunt-contrib-cssmin': '~0.11.0',
+1149 silly resolved        'grunt-contrib-jade': '~0.14.0',
+1149 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+1149 silly resolved        'grunt-contrib-less': '~1.0.0',
+1149 silly resolved        'grunt-contrib-qunit': '~0.5.2',
+1149 silly resolved        'grunt-contrib-uglify': '~0.7.0',
+1149 silly resolved        'grunt-contrib-watch': '~0.6.1',
+1149 silly resolved        'grunt-csscomb': '~3.0.0',
+1149 silly resolved        'grunt-exec': '~0.4.6',
+1149 silly resolved        'grunt-html-validation': '~0.1.18',
+1149 silly resolved        'grunt-jekyll': '~0.4.2',
+1149 silly resolved        'grunt-jscs': '~1.2.0',
+1149 silly resolved        'grunt-saucelabs': '~8.4.1',
+1149 silly resolved        'grunt-sed': '~0.1.1',
+1149 silly resolved        'load-grunt-tasks': '~2.0.0',
+1149 silly resolved        'npm-shrinkwrap': '^200.0.0',
+1149 silly resolved        remarkable: '~1.6.0',
+1149 silly resolved        'time-grunt': '~1.0.0' },
+1149 silly resolved     engines: { node: '~0.10.1' },
+1149 silly resolved     jspm:
+1149 silly resolved      { main: 'js/bootstrap',
+1149 silly resolved        directories: [Object],
+1149 silly resolved        shim: [Object],
+1149 silly resolved        buildConfig: [Object] },
+1149 silly resolved     readme: '# [Bootstrap](http://getbootstrap.com)\n![Bower version](https://img.shields.io/bower/v/bootstrap.svg?style=flat)\n[![npm version](https://img.shields.io/npm/v/bootstrap.svg?style=flat)](https://www.npmjs.com/package/bootstrap)\n[![Build Status](https://img.shields.io/travis/twbs/bootstrap/master.svg?style=flat)](https://travis-ci.org/twbs/bootstrap)\n[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg?style=flat)](https://david-dm.org/twbs/bootstrap#info=devDependencies)\n[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)\n\nBootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.\n\nTo get started, check out <http://getbootstrap.com>!\n\n## Table of contents\n\n- [Quick start](#quick-start)\n- [Bugs and feature requests](#bugs-and-feature-requests)\n- [Documentation](#documentation)\n- [Contributing](#contributing)\n- [Community](#community)\n- [Versioning](#versioning)\n- [Creators](#creators)\n- [Copyright and license](#copyright-and-license)\n\n## Quick start\n\nFour quick start options are available:\n\n- [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.2.zip).\n- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.\n- Install with [Bower](http://bower.io): `bower install bootstrap`.\n- Install with [npm](https://www.npmjs.org): `npm install bootstrap`.\n\nRead the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.\n\n### What\'s included\n\nWithin the download you\'ll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You\'ll see something like this:\n\n```\nbootstrap/\n├── css/\n│   ├── bootstrap.css\n│   ├── bootstrap.css.map\n│   ├── bootstrap.min.css\n│   ├── bootstrap-theme.css\n│   ├── bootstrap-theme.css.map\n│   └── bootstrap-theme.min.css\n├── js/\n│   ├── bootstrap.js\n│   └── bootstrap.min.js\n└── fonts/\n    ├── glyphicons-halflings-regular.eot\n    ├── glyphicons-halflings-regular.svg\n    ├── glyphicons-halflings-regular.ttf\n    ├── glyphicons-halflings-regular.woff\n    └── glyphicons-halflings-regular.woff2\n```\n\nWe provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/chrome-developer-tools/docs/css-preprocessors) (`bootstrap.*.map`) are available for use with certain browsers\' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.\n\n\n\n## Bugs and feature requests\n\nHave a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).\n\n\n## Documentation\n\nBootstrap\'s documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.\n\n### Running documentation locally\n\n1. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation) (requires v2.5.x).\n  - **Windows users:** Read [this unofficial guide](http://jekyll-windows.juthilo.com/) to get Jekyll up and running without problems.\n2. Install the Ruby-based syntax highlighter, [Rouge](https://github.com/jneen/rouge), with `gem install rouge`.\n3. From the root `/bootstrap` directory, run `jekyll serve` in the command line.\n4. Open <http://localhost:9001> in your browser, and voilà.\n\nLearn more about using Jekyll by reading its [documentation](http://jekyllrb.com/docs/home/).\n\n### Documentation for previous releases\n\nDocumentation for v2.3.2 has been made available for the time being at <http://getbootstrap.com/2.3.2/> while folks transition to Bootstrap 3.\n\n[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.\n\n\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.\n\nMoreover, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).\n\nEditor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.\n\n\n\n## Community\n\nKeep track of development and community news.\n\n- Follow [@twbootstrap on Twitter](https://twitter.com/twbootstrap).\n- Read and subscribe to [The Official Bootstrap Blog](http://blog.getbootstrap.com).\n- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##bootstrap` channel.\n- Implementation help may be found at Stack Overflow (tagged [`twitter-bootstrap-3`](http://stackoverflow.com/questions/tagged/twitter-bootstrap-3)).\n\n\n\n## Versioning\n\nFor transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we\'ll adhere to those rules whenever possible.\n\n\n\n## Creators\n\n**Mark Otto**\n\n- <https://twitter.com/mdo>\n- <https://github.com/mdo>\n\n**Jacob Thornton**\n\n- <https://twitter.com/fat>\n- <https://github.com/fat>\n\n\n\n## Copyright and license\n\nCode and documentation copyright 2011-2015 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).\n',
+1149 silly resolved     readmeFilename: 'README.md',
+1149 silly resolved     _id: 'bootstrap@3.3.2',
+1149 silly resolved     dist: { shasum: '864a7f92556eaf44ee455f3e6f6b92094925f890' },
+1149 silly resolved     _from: 'bootstrap@',
+1149 silly resolved     _resolved: 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.2.tgz' } ]
+1150 info install bootstrap@3.3.2 into /var/www/fuji/mat/bootstrap
+1151 info installOne bootstrap@3.3.2
+1152 info /var/www/fuji/mat/bootstrap/node_modules/bootstrap unbuild
+1153 verbose tar unpack /home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+1154 silly lockFile 2724fbce-bootstrap-node-modules-bootstrap tar:///var/www/fuji/mat/bootstrap/node_modules/bootstrap
+1155 verbose lock tar:///var/www/fuji/mat/bootstrap/node_modules/bootstrap /home/vagrant/.npm/2724fbce-bootstrap-node-modules-bootstrap.lock
+1156 silly lockFile 7b12b596--npm-bootstrap-3-3-2-package-tgz tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz
+1157 verbose lock tar:///home/vagrant/.npm/bootstrap/3.3.2/package.tgz /home/vagrant/.npm/7b12b596--npm-bootstrap-3-3-2-package-tgz.lock
+1158 silly gunzTarPerm modes [ '755', '644' ]
+1159 silly gunzTarPerm extractEntry package.json
+1160 silly gunzTarPerm extractEntry .npmignore
+1161 silly gunzTarPerm extractEntry README.md
+1162 error Error: EPERM, chown '/var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json'
+1162 error  { [Error: EPERM, chown '/var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json']
+1162 error   errno: 50,
+1162 error   code: 'EPERM',
+1162 error   path: '/var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json',
+1162 error   fstream_finish_call: 'chown',
+1162 error   fstream_type: 'File',
+1162 error   fstream_path: '/var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json',
+1162 error   fstream_class: 'FileWriter',
+1162 error   fstream_stack:
+1162 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:305:19',
+1162 error      '/usr/lib/nodejs/graceful-fs/polyfills.js:133:7',
+1162 error      'Object.oncomplete (fs.js:107:15)' ] }
+1163 error Please try running this command again as root/Administrator.
+1164 error System Linux 3.13.0-24-generic
+1165 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "bootstrap"
+1166 error cwd /var/www/fuji/mat/bootstrap
+1167 error node -v v0.10.25
+1168 error npm -v 1.3.10
+1169 error path /var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json
+1170 error fstream_path /var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json
+1171 error fstream_type File
+1172 error fstream_class FileWriter
+1173 error fstream_finish_call chown
+1174 error code EPERM
+1175 error errno 50
+1176 error stack Error: EPERM, chown '/var/www/fuji/mat/bootstrap/node_modules/bootstrap/package.json'
+1177 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:305:19
+1177 error fstream_stack /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+1177 error fstream_stack Object.oncomplete (fs.js:107:15)
+1178 verbose exit [ 50, true ]
