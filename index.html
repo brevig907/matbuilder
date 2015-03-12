@@ -26,7 +26,8 @@
                 <h5>updates:</h5>
                 <ul>
                     <li><span class="badge">newest</span></li>
-                    <li>added fabric.js - increased functionality for canvas</li>
+                    <li>Added tooltips</li>
+                    <li>Added fabric.js - increased functionality for canvas</li>
                     <li>Added contact/quote/save form. form does not submit.</li>
                     <li>Renamed debug to fujiDebug </li>
                     <li>Split out js objects into their own files. debug.js, grid.js, & tools.js.</li>
@@ -48,18 +49,23 @@
 
 <div class="container">
     <div class="row">
+
+
         <div class="col-md-3" id="toolmenu">
 
             <div class="row">
                 <div class="btn-toolbar" role="toolbar">
                     <div class="btn-group btn-group-md" role="group">
-                        <button class="glyphicon glyphicon-wrench btn btn-default active-btn" data-func="settings"></button>
-                        <button class="glyphicon glyphicon-pencil btn btn-default disabled"></button>
-                        <button class="glyphicon glyphicon-remove btn btn-default disabled"></button>
+                        <button class="glyphicon glyphicon-wrench btn btn-default active-btn" data-func="settings" data-toggle="tooltip" title="Settings"></button>
+                        <button class="glyphicon glyphicon-pencil btn btn-default dud"></button>
+                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
+                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
+                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                      </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="btn-toolbar" role="toolbar">
                     <div class="btn-group btn-group-md" role="group">
@@ -67,19 +73,12 @@
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
-                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="btn-toolbar" role="toolbar">
-                    <div class="btn-group btn-group-md" role="group">
-                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
-                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                      </div>
                 </div>
             </div>
+
             <p><br/></p>
             <div class="row">
                 <div class="btn-toolbar" role="toolbar">
@@ -150,8 +149,6 @@
             </div>
 
 
-
-
         </div>
         <div class="col-md-9">
             <canvas width="800" height="800" id="fujiCanvas" ></canvas>
@@ -159,8 +156,32 @@
     </div>
 </div>
 
+<!-- html templates -->
+<div class="hidden">
+    <div class="row" id="toolSettings">
+        <div class="col-md-12">
+            <br/>
+            <p style="font-size: 8px">[more to come]</p>
+                <label>
+                    <input type="radio" name="systemOfMeasure" value="metric"> Metric
+                </label>
+                <br/>
+                <label>
+                    <input type="radio" name="systemOfMeasure" value="imperial" disabled> Imperial
+                </label>
 
 
+            <div class="right">
+                <button type="button" class="btn btn-default btn-sm">Save</button>
+            </div>
+            <br/>
+
+        </div>
+
+
+    </div>
+
+</div>
 
 
 
@@ -170,10 +191,11 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!-- fuji js libs -->
-<script src="js/fuji-mats/fabric.min.js"></script>
+<!-- script src="js/fuji-mats/fabric.min.js"></script> -->
 <script src="js/fuji-mats/debug.js"></script>
 <script src="js/fuji-mats/grid.js"></script>
 <script src="js/fuji-mats/tools.js"></script>
+
 
 <script>
     gridId = "fujiCanvas";
@@ -197,6 +219,9 @@
         tools.bindActions();
 
 
+
+        //tooltips
+        $('[data-toggle="tooltip"]').tooltip();
 
     });
 
