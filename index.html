@@ -56,9 +56,9 @@
             <div class="row">
                 <div class="btn-toolbar" role="toolbar">
                     <div class="btn-group btn-group-md" role="group">
-                        <button class="glyphicon glyphicon-wrench btn btn-default active-btn" data-func="settings" data-toggle="tooltip" title="Settings"></button>
+                        <button class="glyphicon glyphicon-wrench btn btn-default active-btn" data-action="settings" data-condition="div" data-toggle="tooltip" title="Settings"></button>
                         <button class="glyphicon glyphicon-pencil btn btn-default dud"></button>
-                        <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
+                        <button class="glyphicon glyphicon-text-size btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
                         <button class="glyphicon glyphicon-remove btn btn-default dud"></button>
@@ -163,16 +163,17 @@
             <br/>
             <p style="font-size: 8px">[more to come]</p>
                 <label>
-                    <input type="radio" name="systemOfMeasure" value="metric"> Metric
+                    <input type="radio" name="unitOfMeasure" value="metric"> Metric
                 </label>
                 <br/>
                 <label>
-                    <input type="radio" name="systemOfMeasure" value="imperial" disabled> Imperial
+                    <input type="radio" name="unitOfMeasure" value="imperial" disabled> Imperial
                 </label>
 
 
             <div class="right">
-                <button type="button" class="btn btn-default btn-sm">Save</button>
+                <button type="button" class="btn btn-default btn-sm" id="save-settings">Save</button>
+                <button type="button" class="btn btn-danger btn-sm">Reset</button>
             </div>
             <br/>
 
@@ -204,9 +205,7 @@
     //testing
     $(document).ready(function(){
 
-        //grid
-        grid.setId(gridId);
-        grid.create();
+
 
 
 
