@@ -112,21 +112,7 @@
     gridId = "fujiCanvas";
     //testing
 
-    var c_canvas = document.getElementById('c');
-    var gcontext = c_canvas.getContext("2d");
-
-    for (var x = 0.5; x < 800; x += 50) {
-        gcontext.moveTo(x, 0);
-        gcontext.lineTo(x, 800);
-
-    }
-    for (var y = 0.5; y < 800; y += 50) {
-        gcontext.moveTo(0, y);
-       gcontext.lineTo(800, y);
-    }
-
-    gcontext.strokeStyle = "#eee";
-    gcontext.stroke();
+   // var canvas = new fabric.Canvas('c', { selection: false });
 
 
     (function() {
@@ -135,6 +121,14 @@
         var canvas = this.__canvas = new fabric.Canvas('c', {
             isDrawingMode: true
         });
+
+        var grid = 5;
+        for (var i = 0; i < (500 / grid); i++) {
+            canvas.add(new fabric.Line([ i * grid, 0, i * grid, 500], { stroke: '#ccc', selectable: false }));
+            canvas.add(new fabric.Line([ 0, i * grid, 500, i * grid], { stroke: '#ccc', selectable: false }))
+        }
+
+
 
         fabric.Object.prototype.transparentCorners = false;
 
