@@ -97,7 +97,7 @@
                             <div class="row" id="quoteForm">
                                 <div class="col-md-offset-1"></div>
                                 <div class="col-md-10">
-                                  
+
                                 <form >
                                     <div class="form-group">
                                         <label for="leadName">Contact Name</label>
@@ -268,6 +268,8 @@
 <script src="/mat/js/bootstrap.min.js"></script>
 
 <script>
+
+
 
     function bind_start_button() {
         $("#start-application").bind('click', function(){

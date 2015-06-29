@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fuji Test v 0.0.1</title>
+
+    <!-- Bootstrap -->
+    <link href="/mat/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        label {
+            display: inline-block; width: 130px;
+        }
+        .info {
+            display: inline-block;
+            width: 25px;
+            background: #ffc;
+        }
+        #bd-wrapper {
+            min-width: 1500px;
+        }
+
+        #canvas-container {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+
+            margin: 10px auto;
+            border: 0px;
+        }
+
+        #images img.img_dragging {
+            opacity: 0.4;
+        }
+        /*
+        Styles below based on  http://www.html5rocks.com/en/tutorials/dnd/basics/
+        */
+
+        /* Prevent the text contents of draggable elements from being selectable. */
+        [draggable] {
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            /* Required to make elements draggable in old WebKit */
+            -khtml-user-drag: element;
+            -webkit-user-drag: element;
+            cursor: move;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>&nbsp;</p>
+
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-9">
+            <div id="canvas-container">
+                <canvas id="c" width="500" height="500" style="border:1px solid #aaa"></canvas>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <ul>
+                <li><a href="#" onclick="mat.create('pattern1', 'white'); return false;">pattern 1</a></li>
+                <li><a href="#" onclick="mat.create('pattern2', 'white'); return false;">pattern 2</a></li>
+                <li><a href="#" onclick="mat.create('pattern3', 'white'); return false;">pattern 3</a></li>
+                <li><a href="#" onclick="mat.create('pattern4', 'white'); return false;">pattern 4</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="/mat/js/fuji-mats/fabric.min.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- @todo move code out of html layer -->
+<script src="/mat/js/bootstrap.min.js"></script>
+<!-- fuji js libs -->
+
+
+<script>
+
+
+
+
+    function draw_grid(grid_size, canvas) {
+
+        grid_size || (grid_size = 30);
+        currentCanvasWidth = canvas.getWidth();
+        currentcanvasHeight = canvas.getHeight();
+
+        // Drawing vertical lines
+        var x;
+        for (x = 0; x <= currentCanvasWidth; x += grid_size) {
+            this.grid_context.moveTo(x + 0.5, 0);
+            this.grid_context.lineTo(x + 0.5, currentCanvasHeight);
+        }
+
+        // Drawing horizontal lines
+        var y;
+        for (y = 0; y <= currentCanvasHeight; y += grid_size) {
+            this.grid_context.moveTo(0, y + 0.5);
+            this.grid_context.lineTo(currentCanvasWidth, y + 0.5);
+        }
+
+        grid_size = grid_size;
+        this.grid_context.strokeStyle = "black";
+        this.grid_context.stroke();
+    }
+
+
+    /**
+     * 50x50 grid
+     *
+     * pass canvas obj to func. add lines
+     * @param canvas
+     */
+    function grid (canvas, top, left, opacity) {
+
+        if (typeof top === 'undefined') {
+            top = 0;
+        }
+
+        if (typeof left === 'undefined') {
+            left = 0;
+        }
+
+        if (typeof opacity === 'undefined') {
+            opacity = 0.4;
+        }
+
+        var grid_w = 30,
+            grid_h = 30,
+            w = canvas.width,
+            h = canvas.height,
+            right = w/grid_w,
+            i = 1;
+
+
+        while (i < h) {
+            var t = (i*grid_h)+top;
+            canvas.add( new fabric.Line([0, t, w, t],{
+                left: left,
+                top: t,
+                stroke: 'black',
+                opacity:0.4,
+                strokeWidth: 1,
+                selectable:false
+            }));
+
+            i++;
+        }
+
+        i=1;
+        while (i < w) {
+            var width = i*grid_w;
+
+            canvas.add( new fabric.Line([width, 0, width, h],{
+                left: width,
+                top: 0,
+                stroke: 'black',
+                opacity:0.4,
+                strokeWidth: 1,
+                selectable:false
+            }) );
+
+            i++;
+        }
+
+    }
+
+    function createWorkspace(canvas)
+    {
+        var rect = new fabric.Rect({
+            left: 60,
+            top: 90,
+            width: 300,
+            height: 300,
+            fill: 'white',
+            stroke: 'black',
+            strokeWidth: 1,
+            hasRotatingPoint: false,
+            angle: 0,
+            selectable:false,
+            opacity:1
+
+        });
+
+        canvas.add(rect);
+
+       // grid(canvas, 90, 60,0.1);
+
+    }
+
+    //decided not to build this in a subclass
+    mat = {
+
+        //meter(s)
+        verticalWidth:1,
+        verticalHeight:2,
+        horizontalWidth:2,
+        horizontalHeight:1,
+        canvas:{},
+
+        setCanvas:function(canvas){
+          this.canvas = canvas;
+        },
+
+        create:function(type, color, pattern) {
+            type  = this.isType(type);
+            color = this.isColor(color);
+            pattern = this.isPattern(pattern);
+
+            if (! pattern) {
+                this.canvas.add(this.generate(type, color));
+            }
+
+        },
+
+        generate:function(type, color, top, left){
+
+            top  = top || 50;
+            left = left || 100;
+
+            if (type == 'horizontal') {
+
+                var rect = new fabric.Rect({
+                    left: left,
+                    top: top,
+                    width: 60,
+                    height: 30,
+                    fill: color,
+                    angle: 0,
+                    padding: 0,
+                    stroke: 'black',
+                    strokeWidth: 1,
+                    hasRotatingPoint: false
+                });
+
+                return rect;
+
+            }
+
+            if (type == 'vertical') {
+                var rect = new fabric.Rect({
+                    left: left,
+                    top: top,
+                    width: 30,
+                    height: 60,
+                    fill: color,
+                    angle: 0,
+                    padding: 0,
+                    stroke: 'black',
+                    strokeWidth: 1,
+                    hasRotatingPoint: false
+
+                });
+                return rect;
+            }
+
+            if (type == 'sqmeter') {
+                var rect = new fabric.Rect({
+                    left: left,
+                    top: top,
+                    width: 30,
+                    height: 30,
+                    fill: color,
+                    angle: 0,
+                    padding: 0,
+                    stroke: 'black',
+                    strokeWidth: 1,
+                    hasRotatingPoint: false
+
+                });
+                return rect;
+            }
+
+            if (type == 'pattern1') {
+                var rect1 = this.generate('vertical', 'white'),
+                    rect2 = this.generate('vertical', 'white', 50, 130),
+                    rect3 = this.generate('horizontal', 'white', 110),
+                    rect4 = this.generate('horizontal', 'white', 140);
+
+                return new fabric.Group([rect1, rect2, rect3, rect4], { hasRotatingPoint: false});
+
+            }
+
+            if (type == 'pattern2') {
+                var rect1 = this.generate('vertical', 'white', 110),
+                    rect2 = this.generate('vertical', 'white', 110, 130),
+                    rect3 = this.generate('horizontal', 'white'),
+                    rect4 = this.generate('horizontal', 'white',80);
+
+                return new fabric.Group([rect1, rect2, rect3, rect4],{ hasRotatingPoint: false});
+
+            }
+
+            if (type == 'pattern3') {
+                var rect1 = this.generate('vertical', 'white'),
+                    rect2 = this.generate('horizontal', 'white', null, 130),
+                    rect3 = this.generate('sqmeter', 'white',80,130),
+                    rect4 = this.generate('horizontal', 'white', 110),
+                        rect5 = this.generate('vertical', 'white', 80, 160);
+
+                return new fabric.Group([rect1, rect2, rect3, rect4, rect5],{ hasRotatingPoint: false});
+
+            }
+
+            if (type == 'pattern4') {
+                var rect1 = this.generate('horizontal', 'white'),
+                        rect2 = this.generate('horizontal', 'white', 80),
+                        rect3 = this.generate('horizontal', 'white', 110),
+                        rect4 = this.generate('vertical', 'white', null, 160);
+                        rect5 = this.generate('sqmeter', 'white', 110, 160);
+
+                return new fabric.Group([rect1, rect2, rect3, rect4, rect5],{ hasRotatingPoint: false});
+
+            }
+
+        },
+
+        isType:function(type) {
+            if (typeof type === 'undefined') {
+                return 'vertical';
+            }
+
+            return type;
+        },
+
+        isColor:function(color) {
+            if (typeof color === 'undefined') {
+                return 'white';
+            }
+            //write something here to verify color type
+
+
+            return color;
+        },
+
+        isPattern:function(pattern) {
+            if (typeof pattern === 'undefined') {
+                return false;
+            }
+
+            return pattern;
+        },
+
+
+
+        exception:function(message) {
+            console.log(message);
+        }
+
+
+    };
+
+
+
+    $(document).ready(function() {
+        var canvas = new fabric.Canvas('c');
+
+        grid(canvas);
+        createWorkspace(canvas);
+
+        mat.setCanvas(canvas);
+
+    });
+
+</script>
+</body>
+</html>
