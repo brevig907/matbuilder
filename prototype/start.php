@@ -1,3 +1,8 @@
+<?php echo "[message:'updating scripts']";
+echo '<br/ >';
+echo date('Y-m-d'); exit;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
